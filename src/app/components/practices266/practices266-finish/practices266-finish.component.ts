@@ -1,15 +1,15 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Subscription } from 'rxjs';
-import { ExerciseService } from '../../../services/exercise.service';
 import { ExerciseModel } from '../../../models/exercise.model';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ExerciseService } from '../../../services/exercise.service';
+import { Subscription } from 'rxjs';
 
 @Component({
-    selector: 'app-topic-finish',
-    templateUrl: './topic-finish.component.html',
-    styleUrl: './topic-finish.component.scss'
+    selector: 'app-practices266-finish',
+    templateUrl: './practices266-finish.component.html',
+    styleUrl: './practices266-finish.component.scss'
 })
-export class TopicFinishComponent implements OnInit, OnDestroy {
+export class Practices266FinishComponent implements OnInit, OnDestroy {
     exerSub$: Subscription = new Subscription();
     exercises: ExerciseModel[] = [];
     topicId: any = '';
@@ -33,6 +33,6 @@ export class TopicFinishComponent implements OnInit, OnDestroy {
     }
 
     getRetestUrl(): string {
-        return ['topics', this.topicId, 'practice'].join('/');
+        return ['practices', this.topicId, 'exam'].join('/');
     }
 }

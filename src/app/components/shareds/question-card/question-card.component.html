@@ -29,6 +29,7 @@
     </div>
 
     @if (isResult) {
+    <!--  -->
     @if (!exercise.chooseAnwser || exercise.chooseAnwser == '') {
     <div>
         <div class="border-l-4 px-4 py-1 mt-8 text-base border-yellow-500 bg-yellow-50">
@@ -36,13 +37,14 @@
         </div>
     </div>
     }
+    <!--  -->
     }
 
     @if (isShowExplain) {
     <div>
         <div class="border-l-4 rounded-l px-4 mt-8 text-lg"
             [class.border-pink-700]="exercise.chooseAnwser !== exercise.anwser"
-            [class.border-sky-700]="exercise.chooseAnwser === exercise.anwser">
+            [class.border-lime-600]="exercise.chooseAnwser === exercise.anwser">
             <p class="font-bold">Explain: </p>
             {{exercise.explain}}
         </div>
@@ -63,17 +65,27 @@
                 {{answer}}
             </label>
         </div>
+
         @if (isShowAnswer) {
         <div class="grow-0 flex">
-            @if (value === correctAnswer) {
-            <span nz-icon nzType="check-circle" class="text-2xl text-orange-400" nzTheme="fill">
+            <span
+                *ngIf="exercise.chooseAnwser && exercise.chooseAnwser === correctAnswer && exercise.chooseAnwser === value"
+                nz-icon nzType="check-circle" class="text-2xl text-orange-400" nzTheme="fill">
             </span>
-            }
-            @else {
-            <span nz-icon nzType="close-circle" class="text-2xl  text-red-600" nzTheme="outline"></span>
-            }
+
+            <span *ngIf="exercise.chooseAnwser && exercise.chooseAnwser !== correctAnswer && value === correctAnswer"
+                nz-icon nzType="check-circle" class="text-2xl text-orange-600" nzTheme="outline">
+            </span>
+
+            <span
+                *ngIf="exercise.chooseAnwser && exercise.chooseAnwser !== correctAnswer && exercise.chooseAnwser === value"
+                nz-icon nzType="close-circle" class="text-2xl  text-red-600" nzTheme="fill">
+            </span>
+
+            <span *ngIf="!exercise.chooseAnwser && correctAnswer === value" nz-icon nzType="check-circle"
+                class="text-2xl  text-orange-600" nzTheme="outline">
+            </span>
         </div>
         }
-
     </div>
 </ng-template>

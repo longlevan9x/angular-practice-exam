@@ -1,0 +1,35 @@
+<nav class="bg-white p-4 shadow-md mb-6 ">
+    <div class="max-w-7xl mx-auto">
+        <ol class="list-reset flex text-gray-700">
+            <li class="cursor-pointer" (click)="backToPrev()">
+                <span class="mx-2">
+                    <span nz-icon nzType="arrow-left" nzTheme="outline"></span>
+                </span>
+            </li>
+            <li class="cursor-pointer flex">
+                <a routerLink="/" class="text-blue-500 hover:underline">
+                    Home
+                </a>
+                <svg *ngIf="breadcrumbs.length" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6 text-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m9 20.247 6-16.5" />
+                </svg>
+            </li>
+            <li *ngFor="let breadcrumb of breadcrumbs; let i = index" class="cursor-pointer flex">
+                <a *ngIf="breadcrumb.url && i < breadcrumbs.length - 1" [routerLink]="breadcrumb.url"
+                    class="text-blue-500 hover:underline">
+                    {{breadcrumb.label}}
+                </a>
+
+                <span *ngIf="!breadcrumb.url || i === breadcrumbs.length - 1" class="text-gray-500">
+                    {{ breadcrumb.label }}
+                </span>
+
+                <svg *ngIf="i < breadcrumbs.length - 1" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m9 20.247 6-16.5" />
+                </svg>
+            </li>
+        </ol>
+    </div>
+</nav>

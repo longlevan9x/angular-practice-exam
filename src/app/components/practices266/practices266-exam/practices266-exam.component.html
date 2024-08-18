@@ -1,0 +1,13 @@
+<div class="max-w-6xl mx-auto pb-16">
+    @for (exercise of exercises; track $index) {
+        <div class="mb-8">
+            <app-question-card [exercise]="exercise" [totalQuestion]="totalQuestion" [currentQuestionIndex]="$index+1"></app-question-card>
+        </div>
+    }
+
+    <div class="flex justify-center">
+        <button class="text-white bg-amber-600 hover:bg-amber-500 font-semibold py-3 px-6"
+        (click)="onFinishPractice()">
+        Finish
+    </button>
+</div>

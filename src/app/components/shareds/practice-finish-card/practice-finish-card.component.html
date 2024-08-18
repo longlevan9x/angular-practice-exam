@@ -1,0 +1,42 @@
+<app-finish-score-card [isPassed]="isPassed" [retestUrl]="retestUrl" [scrore]="scrore"
+    [totalCorrectAnswer]="totalCorrectAnswer" [totalQuestion]="totalQuestion"></app-finish-score-card>
+
+<div class="mt-6">
+    <nz-tabset>
+        <nz-tab nzTitle="all questions" [nzAnimated]="false">
+            @for (exercise of exercises; track $index) {
+            <div class="mb-8">
+                <app-question-card [currentQuestionIndex]="$index+1" [exercise]="exercise"
+                    [totalQuestion]="exercises.length" [isShowExplain]="true" [isShowAnswer]="true"
+                    [isAllowEditAnswer]="false" [isResult]="true"></app-question-card>
+            </div>
+            }
+        </nz-tab>
+        <nz-tab [nzTitle]="totalCorrectAnswer.toString() + ' correct'">
+            @for (exercise of exercises; track $index) {
+
+            @if (exercise.chooseAnwser === exercise.anwser) {
+            <div class="mb-8">
+                <app-question-card [currentQuestionIndex]="$index+1" [exercise]="exercise"
+                    [totalQuestion]="exercises.length" [isShowExplain]="true" [isShowAnswer]="true"
+                    [isAllowEditAnswer]="false" [isResult]="true"></app-question-card>
+            </div>
+            }
+
+            }
+        </nz-tab>
+        <nz-tab [nzTitle]="totalWrongAnswer.toString() + ' incorrect'">
+            @for (exercise of exercises; track $index) {
+
+            @if (exercise.chooseAnwser !== exercise.anwser) {
+            <div class="mb-8">
+                <app-question-card [currentQuestionIndex]="$index+1" [exercise]="exercise"
+                    [totalQuestion]="exercises.length" [isShowExplain]="true" [isShowAnswer]="true"
+                    [isAllowEditAnswer]="false" [isResult]="true"></app-question-card>
+            </div>
+            }
+
+            }
+        </nz-tab>
+    </nz-tabset>
+</div>

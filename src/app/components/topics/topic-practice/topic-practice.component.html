@@ -27,7 +27,7 @@
         <nz-progress [nzPercent]="progressPercentage" nzSize="small" [nzShowInfo]="false"></nz-progress>
     </div>
 
-    <app-question-card [currentQuestionIndex]="currentQuestionIndex" [(exercise)]="exercise" [totalQuestion]="exercises.length"></app-question-card>
+    <app-question-card [currentQuestionIndex]="currentQuestionIndex+1" [(exercise)]="exercise" [totalQuestion]="exercises.length"></app-question-card>
 
     <div class="flex justify-between mt-5">
         <div>

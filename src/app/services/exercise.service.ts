@@ -15,8 +15,8 @@ export class ExerciseService {
         const numberQuestionOfTopic = 20;
         const totalTopic = 18;
 
-        let startIndex = topicId * numberQuestionOfTopic;
-        let endIndex = topicId * numberQuestionOfTopic + numberQuestionOfTopic;
+        let startIndex = (topicId - 1) * numberQuestionOfTopic;
+        let endIndex = (topicId - 1) * numberQuestionOfTopic + numberQuestionOfTopic;
 
         if (topicId <= 0) {
             startIndex = numberQuestionOfTopic * totalTopic;
@@ -24,6 +24,10 @@ export class ExerciseService {
         }
 
         return exercises.slice(startIndex, endIndex);
+    }
+
+    getAllExercise() {
+        return exercises;
     }
 
     setExerciseObs(exercises: ExerciseModel[]): void {

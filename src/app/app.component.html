@@ -1,17 +1,8 @@
 <div class="bg-white min-h-screen">
-    <nav class="bg-white p-4 shadow-md mb-6">
-        <div class="max-w-7xl mx-auto">
-            <ol class="list-reset flex text-gray-700">
-                <li class="cursor-pointer">
-                    <span class="mx-2">
-                        <span nz-icon nzType="arrow-left" nzTheme="outline"></span>
-                    </span>
-                </li>
-                <li class="cursor-pointer"><a routerLink="/" class="text-blue-500 hover:underline">Home</a></li>
-            </ol>
-        </div>
-    </nav>
+    <app-breadcrumb></app-breadcrumb>
     <div class="w-1/2 mx-auto">
         <router-outlet></router-outlet>
     </div>
 </div>
+
+<nz-back-top></nz-back-top>

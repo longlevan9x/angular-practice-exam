@@ -1,4 +1,5 @@
 import { NgModule } from "@angular/core";
+import { NzBackTopModule } from "ng-zorro-antd/back-top";
 import { NzCardModule } from "ng-zorro-antd/card";
 import { NzGridModule } from "ng-zorro-antd/grid";
 import { NzListModule } from "ng-zorro-antd/list";
@@ -17,7 +18,8 @@ import { NzTagModule } from "ng-zorro-antd/tag";
         NzModalModule,
         NzListModule,
         NzTagModule,
-        NzTabsModule
+        NzTabsModule,
+        NzBackTopModule
     ]
 })
 export class NgZorroModule { }
