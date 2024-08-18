@@ -1,0 +1,10 @@
+<div class="max-w-sm bg-white shadow-lg rounded-none overflow-hidden" *ngFor="let exam of exams">
+    <div class="sm:flex sm:items-center px-6 py-4">
+        <img class="block mx-auto sm:mx-0 sm:shrink-0 h-24 rounded-full sm:rounded-full object-cover"
+            [src]="exam.imageUrl" alt="Profile Picture">
+        <div class="text-center sm:text-left sm:ml-4">
+            <a [routerLink]="'/exam/' + exam.id " class="text-lg leading-tight font-medium text-black">{{exam.name}}</a>
+            <div class="mt-4 text-sm leading-tight font-normal text-gray-600">{{exam.description}}</div>
+        </div>
+    </div>
+</div>

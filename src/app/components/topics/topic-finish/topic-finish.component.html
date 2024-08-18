@@ -1,0 +1,111 @@
+<div class="max-w-3xl mx-auto">
+    <div class="max-w-full bg-white border border-cyan-200 p-8  mt-3 relative overflow-hidden">
+        <!-- Background Layers -->
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 opacity-20 transform rotate-45 -translate-x-16 translate-y-16 rounded-full">
+        </div>
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-10 transform -rotate-45 translate-x-16 -translate-y-16 rounded-full">
+        </div>
+
+        <!-- Content Overlay -->
+        <div class="relative z-10 text-center">
+            <!-- Icon and Test Title -->
+            <div class="flex justify-center items-center mb-3">
+                @if (isPassed) {
+                <span nz-icon nzType="check-circle"
+                    class="text-4xl text-blue-600 transform hover:scale-110 transition-transform duration-300"
+                    nzTheme="fill"></span>
+                }
+                @else {
+                <span nz-icon nzType="close-circle"
+                    class="text-4xl text-red-600 transform hover:scale-110 transition-transform duration-300"
+                    nzTheme="fill"></span>
+                }
+
+                <h2 class="text-2xl font-extrabold text-gray-800 ml-4">Test Results</h2>
+            </div>
+
+            <!-- Score Section -->
+            <div class="mb-4">
+                <p class="text-lg font-semibold text-gray-600">Your Score</p>
+                <p class="text-4xl font-extrabold animate-pulse" [class.text-blue-600]="isPassed"
+                    [class.text-red-600]="!isPassed">{{scrore}}%</p>
+            </div>
+
+            <!-- Detailed Results -->
+            <div class="bg-gray-100 p-4 rounded-lg shadow-inner mb-6 text-gray-700">
+                <p class="flex justify-between">
+                    <span class="font-semibold">Correct Answers:</span>
+                    <span>{{totalCorrectAnswer}} out of {{totalQuestion}}</span>
+                </p>
+                <p class="flex justify-between">
+                    <span class="font-semibold">Total Questions:</span>
+                    <span>{{totalQuestion}}</span>
+                </p>
+                <p class=" justify-between hidden">
+                    <span class="font-semibold">Duration:</span>
+                    <span>20</span>
+                </p>
+            </div>
+
+            <!-- Result Message -->
+            <div class="mb-6">
+                @if (isPassed) {
+                <p class="text-lg font-semibold text-green-600">Congratulations! You passed the test.</p>
+                }
+                @else {
+                <p class="text-lg font-semibold text-red-600 mt-4  fade-in">
+                    Unfortunately, you did not pass the test. Please review the material and try again.
+                </p>
+                }
+
+            </div>
+
+            <!-- Actions -->
+            <div class="flex justify-center space-x-4">
+                <button (click)="onRetest()"
+                    class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg transform hover:-translate-y-1 transition-transform duration-300">
+                    Retake Test
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-6">
+        <nz-tabset>
+            <nz-tab nzTitle="all questions" [nzAnimated]="false">
+                @for (exercise of exercises; track $index) {
+                <div class="mb-8">
+                    <app-question-card [currentQuestionIndex]="$index+1" [exercise]="exercise"
+                        [totalQuestion]="exercises.length" [isShowExplain]="true" [isShowAnswer]="true"
+                        [isAllowEditAnswer]="false" [isResult]="true"></app-question-card>
+                </div>
+                }
+            </nz-tab>
+            <nz-tab [nzTitle]="totalCorrectAnswer.toString() + ' correct'">
+                @for (exercise of exercises; track $index) {
+                @if (exercise.chooseAnwser === exercise.anwser) {
+                <div class="mb-8">
+                    <app-question-card [currentQuestionIndex]="$index+1" [exercise]="exercise"
+                        [totalQuestion]="exercises.length" [isShowExplain]="true" [isShowAnswer]="true"
+                        [isAllowEditAnswer]="false" [isResult]="true"></app-question-card>
+                </div>
+                }
+                }
+            </nz-tab>
+            <nz-tab [nzTitle]="totalWrongAnswer.toString() + ' incorrect'">
+                @for (exercise of exercises; track $index) {
+                @if (exercise.chooseAnwser !== exercise.anwser) {
+                <div class="mb-8">
+                    <app-question-card [currentQuestionIndex]="$index+1" [exercise]="exercise"
+                        [totalQuestion]="exercises.length" [isShowExplain]="true" [isShowAnswer]="true"
+                        [isAllowEditAnswer]="false" [isResult]="true"></app-question-card>
+                </div>
+                }
+                }
+            </nz-tab>
+        </nz-tabset>
+    </div>
+
+</div>

@@ -1,0 +1,21 @@
+<div class="flex items-center justify-center">
+    <div class="w-1/2 bg-white shadow-lg overflow-hidden">
+        <!-- Logo Image -->
+        <div class="flex justify-center p-4 bg-gray-100">
+            <img class="h-40 w-40" [src]="exam.imageUrl" alt="Logo">
+        </div>
+        <!-- Card Content -->
+        <div class="px-6 py-4">
+            <h2 class="text-xl font-semibold text-gray-800 text-center">{{exam.name}}</h2>
+            <div class="mt-4">
+                <p class="text-gray-600 text-center">{{exam.description}}</p>
+            </div>
+        </div>
+        <!-- Card Footer -->
+        <div class="px-6 py-4 bg-gray-100 border-t border-gray-200">
+            <button [routerLink]="'topics'" class="w-full text-white bg-blue-700 hover:bg-blue-600 font-semibold text-lg py-2 px-4">
+                Training with Topics
+            </button>
+        </div>
+    </div>
+</div>

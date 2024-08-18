@@ -1,0 +1,79 @@
+<div class="max-w-full bg-white border border-cyan-200 p-4 mt-3">
+    <div class="flex justify-between items-center mb-4">
+        <div class="text-gray-700">
+            <h2 class="text-xl font-bold text-gray-800 mb-2">
+                <span class="font-bold">Question:</span>
+                {{currentQuestionIndex}} of {{totalQuestion}}
+            </h2>
+        </div>
+        <div class="text-gray-700">
+        </div>
+    </div>
+
+    <div class="mb-4">
+        <h2 class="text-xl text-gray-800 mb-2">{{exercise.question}}</h2>
+        <p class="text-gray-600">(choose the best answer) </p>
+    </div>
+
+    <div class="mb-6">
+        <div class="mt-6 space-y-6">
+            <div [ngTemplateOutlet]="answerTemp"
+                [ngTemplateOutletContext]="{value: 'A', answer: exercise.A, correctAnswer: exercise.anwser}"></div>
+            <div [ngTemplateOutlet]="answerTemp"
+                [ngTemplateOutletContext]="{value: 'B', answer: exercise.B, correctAnswer: exercise.anwser}"></div>
+            <div [ngTemplateOutlet]="answerTemp"
+                [ngTemplateOutletContext]="{value: 'C', answer: exercise.C, correctAnswer: exercise.anwser}"></div>
+            <div [ngTemplateOutlet]="answerTemp"
+                [ngTemplateOutletContext]="{value: 'D', answer: exercise.D, correctAnswer: exercise.anwser}"></div>
+        </div>
+    </div>
+
+    @if (isResult) {
+    @if (!exercise.chooseAnwser || exercise.chooseAnwser == '') {
+    <div>
+        <div class="border-l-4 px-4 py-1 mt-8 text-base border-yellow-500 bg-yellow-50">
+            No answer given
+        </div>
+    </div>
+    }
+    }
+
+    @if (isShowExplain) {
+    <div>
+        <div class="border-l-4 rounded-l px-4 mt-8 text-lg"
+            [class.border-pink-700]="exercise.chooseAnwser !== exercise.anwser"
+            [class.border-sky-700]="exercise.chooseAnwser === exercise.anwser">
+            <p class="font-bold">Explain: </p>
+            {{exercise.explain}}
+        </div>
+    </div>
+    }
+
+</div>
+
+<ng-template #answerTemp let-value="value" let-answer="answer" let-correctAnswer="correctAnswer">
+    <div class="flex items-center gap-x-3">
+        <div class="flex items-center grow-0">
+            <input [id]="'answer-' + exercise.id + value" [name]="'answer'+ exercise.id" [disabled]="!isAllowEditAnswer"
+                [(ngModel)]="exercise.chooseAnwser" (ngModelChange)="onModelChange($event)" [value]="value" type="radio"
+                class="h-5 w-5 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+        </div>
+        <div class="grow">
+            <label [for]="'answer-' + exercise.id + value" class="block text-xl font-normal leading-6 text-gray-900">
+                {{answer}}
+            </label>
+        </div>
+        @if (isShowAnswer) {
+        <div class="grow-0 flex">
+            @if (value === correctAnswer) {
+            <span nz-icon nzType="check-circle" class="text-2xl text-orange-400" nzTheme="fill">
+            </span>
+            }
+            @else {
+            <span nz-icon nzType="close-circle" class="text-2xl  text-red-600" nzTheme="outline"></span>
+            }
+        </div>
+        }
+
+    </div>
+</ng-template>

@@ -1,0 +1,85 @@
+<div class="max-w-3xl mx-auto">
+    <div class="text-center">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">{{topic.name}}</h1>
+    </div>
+    <div class="max-w-full bg-white border border-cyan-200 p-4 mt-3">
+        <div class="flex justify-between mb-3">
+            <div class="flex cursor-pointer hover:text-blue-700 items-center" (click)="showExercisesModal()">
+                <span nz-icon nzType="unordered-list" nzTheme="outline" class="text-lg"></span>
+                <p class="ml-2">See all questions</p>
+            </div>
+            <div>
+                <button type="submit" (click)="onFinishPractice()"
+                    class="bg-amber-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-amber-500">
+                    Finish
+                </button>
+            </div>
+        </div>
+        <div class="flex justify-between">
+            <div class="font-bold">
+                <span nz-icon nzType="field-time" nzTheme="outline" class="text-base"></span>
+                <span class="ml-1 text-base text-gray-600">Time left:</span>
+            </div>
+            <div class="text-base text-gray-600">
+                00:{{ timeRemaining.minutes | number: '2.0' }}:{{ timeRemaining.seconds | number: '2.0' }}
+            </div>
+        </div>
+        <nz-progress [nzPercent]="progressPercentage" nzSize="small" [nzShowInfo]="false"></nz-progress>
+    </div>
+
+    <app-question-card [currentQuestionIndex]="currentQuestionIndex" [(exercise)]="exercise" [totalQuestion]="exercises.length"></app-question-card>
+
+    <div class="flex justify-between mt-5">
+        <div>
+            @if (isShowPrevBtn()) {
+            <button class="text-white bg-purple-500 hover:bg-purple-600 font-semibold py-3 px-6"
+                (click)="onPreviousQuestion()">
+                <span nz-icon nzType="left" nzTheme="outline"></span>
+                Previous
+            </button>
+            }
+        </div>
+        <div>
+            @if (isShowNextBtn()) {
+            <button class="text-white bg-purple-500 hover:bg-purple-600 font-semibold py-3 px-6"
+                (click)="onNextQuestion()">
+                Next
+                <span nz-icon nzType="right" nzTheme="outline"></span>
+            </button>
+            }
+        </div>
+    </div>
+
+    <div class="flex justify-center" *ngIf="currentQuestionIndex === this.exercises.length - 1">
+        <button class="text-white bg-amber-600 hover:bg-amber-500 font-semibold py-3 px-6"
+        (click)="onFinishPractice()">
+        Finish now
+    </button>
+    </div>
+</div>
+
+<nz-modal [(nzVisible)]="isShowExercisesModal" nzTitle="All exercises" class="h-7" [nzCancelText]="null"
+    [nzOkText]="null" (nzOnCancel)="onExerModalOk()" [nzWidth]="700">
+    <ng-container *nzModalContent>
+        <div class="bg-white h-[60vh] w-full overflow-y-auto">
+            <ul>
+                @for (item of exercises; track item; let index = $index) {
+                <li class="border-b  border-neutral-300 py-2">
+                    <span class="text-base">Question {{ index+1 }}</span>
+                    @if (item.chooseAnwser) {
+                    <span class="ml-2 bg-orange-100 text-orange-800 text-xs px-1 py-0 rounded-lg">
+                        Answered
+                    </span>
+                    }
+
+                    @if (!item.chooseAnwser) {
+                    <span class="ml-2 bg-neutral-100 text-neutral-800 text-xs px-1 py-0 rounded-lg">
+                        Unanswered
+                    </span>
+                    }
+                </li>
+                }
+            </ul>
+        </div>
+    </ng-container>
+</nz-modal>

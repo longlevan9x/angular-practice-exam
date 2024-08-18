@@ -1,0 +1,25 @@
+<div class="max-w-2xl mx-auto space-y-6">
+    <!-- Card 3 -->
+    <div class="bg-white shadow-lg rounded-none overflow-hidden flex" *ngFor="let topic of topics;  index as i">
+        <!-- Left Section (Title) -->
+        <div class="w-1/4 bg-cyan-200 p-4 flex items-center justify-center">
+            <h2 class="text-lg font-semibold text-gray-800">Topic {{i + 1}}</h2>
+        </div>
+        <!-- Right Section (Content) -->
+        <div class="w-3/4 p-4 flex flex-col ">
+            <h2 class="text-xl font-semibold text-gray-800">{{topic.name}}</h2>
+            <div class="flex items-center mt-2 text-gray-600">
+                <span nz-icon nzType="question-circle" class="text-sm" nzTheme="outline"></span>
+                <span class="ml-2">20 question</span>
+            </div>
+            <div class="flex items-center mt-2 text-gray-600">
+                <span nz-icon nzType="field-time" class="text-base" nzTheme="outline"></span>
+                <span class="ml-2">15 minutes</span>
+            </div>
+            <button [routerLink]="'/topics/' + topic.id + '/overview'"
+                class="mt-4 text-white bg-blue-800 hover:bg-blue-600 font-semibold py-2 px-4">
+                Start Test
+            </button>
+        </div>
+    </div>
+</div>
