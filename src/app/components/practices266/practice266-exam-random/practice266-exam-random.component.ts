@@ -5,6 +5,7 @@ import { ExerciseService } from '../../../services/exercise.service';
 import { Practice266Service } from '../../../services/practice266.service';
 import { ViewCustomizeModel } from '../../../models/view-customize.model';
 import { UtilsService } from '../../../services/utils.service';
+import { PracticeHistoryService } from '../../../services/practice-history.service';
 
 @Component({
     selector: 'app-practice266-exam-random',
@@ -32,7 +33,8 @@ export class Practice266ExamRandomComponent {
         private activatedRoute: ActivatedRoute,
         private exerciceService: ExerciseService,
         private router: Router,
-        private utilsService: UtilsService
+        private utilsService: UtilsService,
+        private practiceHistoryService: PracticeHistoryService
     ) {
     }
 
@@ -65,6 +67,7 @@ export class Practice266ExamRandomComponent {
 
     onFinishPractice(): void {
         this.exerciceService.setExerciseObs(this.exercises);
+        this.practiceHistoryService.savePractice266Question(this.exercises);
         this.router.navigate(['practices', 'exam-finish']);
     }
 

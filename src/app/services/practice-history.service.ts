@@ -35,7 +35,6 @@ export class PracticeHistoryService {
     getQuestionWithId(exerId?: number): any[] {
         const _id: any = exerId;
         const histories: any = this.localStorageService.getItem(PRACTICE_HISTORY.prac266ques) || {};
-        console.log(_id, histories[_id]);
         return histories[_id] || [];
     }
 }
