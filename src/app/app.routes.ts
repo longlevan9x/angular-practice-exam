@@ -107,6 +107,13 @@ export const routes: Routes = [
                 data: {
                     breadcrumb: "Exam"
                 }
+            },
+            {
+                path: 'exam-finish',
+                component: Practices266FinishComponent,
+                data: {
+                    breadcrumb: "Finish"
+                }
             }
         ]
     },

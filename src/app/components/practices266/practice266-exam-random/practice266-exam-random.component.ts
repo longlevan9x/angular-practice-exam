@@ -4,6 +4,7 @@ import { ExerciseModel } from '../../../models/exercise.model';
 import { ExerciseService } from '../../../services/exercise.service';
 import { Practice266Service } from '../../../services/practice266.service';
 import { ViewCustomizeModel } from '../../../models/view-customize.model';
+import { UtilsService } from '../../../services/utils.service';
 
 @Component({
     selector: 'app-practice266-exam-random',
@@ -20,7 +21,7 @@ export class Practice266ExamRandomComponent {
 
     viewCustomize: ViewCustomizeModel = {
         questionPerPage: 50,
-        isRandomQuestion: false,
+        isRandomQuestion: true,
         isShowAnswer: false,
         isShowFullExplain: false,
         isShowAllQuestion: false
@@ -30,7 +31,8 @@ export class Practice266ExamRandomComponent {
         private practice266Serice: Practice266Service,
         private activatedRoute: ActivatedRoute,
         private exerciceService: ExerciseService,
-        private router: Router
+        private router: Router,
+        private utilsService: UtilsService
     ) {
     }
 
@@ -44,28 +46,37 @@ export class Practice266ExamRandomComponent {
         if (this.viewCustomize.isShowAllQuestion) {
             this.exercises = this.practice266Serice.getAllPractice();
             this.totalQuestion = this.exercises.length;
-            
+
             return;
         }
 
         this.totalQuestion = this.viewCustomize.questionPerPage;
-        this.exercises= this.practice266Serice.getPractices(0, this.totalQuestion);
+
+        if (this.viewCustomize.isRandomQuestion) {
+            const exercises = this.practice266Serice.getAllPractice();
+            const ranNums = this.utilsService.genRandomNums(this.totalQuestion, exercises.length);
+            console.log(ranNums.sort());
+            this.exercises = exercises.filter((v, i) => ranNums.includes(i));
+            return;
+        }
+
+        this.exercises = this.practice266Serice.getPractices(0, this.totalQuestion);
     }
 
-    onFinishPractice() {
+    onFinishPractice(): void {
         this.exerciceService.setExerciseObs(this.exercises);
-        this.router.navigate(['practices', this.topicId, 'finish']);
+        this.router.navigate(['practices', 'exam-finish']);
     }
 
     showExercisesModal(): void {
         this.isShowExercisesModal = true;
     }
 
-    onShowViewSetingModal() {
+    onShowViewSetingModal(): void {
         this.isOpenViewSettingModal = true;
     }
 
-    onViewSettingOk() {
+    onViewSettingOk(): void {
         this.initExercise();
     }
 }
