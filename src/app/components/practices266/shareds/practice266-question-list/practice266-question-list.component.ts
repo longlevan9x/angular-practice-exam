@@ -1,16 +1,16 @@
-import { Component, HostListener, OnInit, QueryList, ViewChildren } from '@angular/core';
-import { ExerciseModel } from '../../../models/exercise.model';
-import { ExerciseService } from '../../../services/exercise.service';
-import { Practice266Service } from '../../../services/practice266.service';
+import { Component, HostListener, Input, QueryList, ViewChildren } from '@angular/core';
+import { ExerciseModel } from '../../../../models/exercise.model';
 import { ActivatedRoute, Router } from '@angular/router';
-import { PracticeHistoryService } from '../../../services/practice-history.service';
+import { ExerciseService } from '../../../../services/exercise.service';
+import { PracticeHistoryService } from '../../../../services/practice-history.service';
+import { Practice266Service } from '../../../../services/practice266.service';
 
 @Component({
-    selector: 'app-practices266-exam',
-    templateUrl: './practices266-exam.component.html',
-    styleUrl: './practices266-exam.component.scss'
+    selector: 'app-practice266-question-list',
+    templateUrl: './practice266-question-list.component.html',
+    styleUrl: './practice266-question-list.component.scss'
 })
-export class Practices266ExamComponent implements OnInit {
+export class Practice266QuestionListComponent {
     exercises: ExerciseModel[] = [];
     totalQuestion = 0;
     topicId: number = 0;

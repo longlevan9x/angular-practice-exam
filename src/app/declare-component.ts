@@ -18,6 +18,7 @@ import { PracticeFinishCardComponent } from "./components/shareds/practice-finis
 import { QuestionCheckModalComponent } from "./components/shareds/question-check-modal/question-check-modal.component";
 import { Practice266ExamRandomComponent } from "./components/practices266/practice266-exam-random/practice266-exam-random.component";
 import { ViewCustomizeModalComponent } from "./components/shareds/view-customize-modal/view-customize-modal.component";
+import { Practice266QuestionListComponent } from "./components/practices266/shareds/practice266-question-list/practice266-question-list.component";
 
 export const declarations = [
     AppComponent,
@@ -41,10 +42,11 @@ export const declarations = [
     TopicCardComponent,
     FinishScoreCardComponent,
     PracticeFinishCardComponent,
-    
+    Practice266QuestionListComponent,
+
     QuestionCheckModalComponent,
     ViewCustomizeModalComponent,
-    
+
     BreadcrumbComponent,
     ErrorComponent,
 ]

@@ -15,8 +15,15 @@ export class QuestionCheckModalComponent {
     @Output()
     isShowModalChange: EventEmitter<boolean> = new EventEmitter<boolean>();
 
+    @Output()
+    clickQuestion: EventEmitter<object> = new EventEmitter<object>();
+
     onExerModalOk(): void {
         this.isShowModal = false;
         this.isShowModalChange.emit(this.isShowModal);
+    }
+
+    onClickQuestion(id?: number, index?: number) {
+        this.clickQuestion.emit({id, index});
     }
 }

@@ -5,7 +5,7 @@
     </div>
 
     @for (exercise of exercises; track $index) {
-    <div class="mb-8">
+    <div class="mb-8" #questionCardRef>
         <app-question-card [exercise]="exercise" [totalQuestion]="totalQuestion"
             [currentQuestionIndex]="$index+1"></app-question-card>
     </div>
@@ -28,5 +28,6 @@
             </button>
         </div>
     </div>
+</div>
 
-    <app-question-check-modal [(isShowModal)]="isShowExercisesModal" [exercises]="exercises"></app-question-check-modal>
+<app-question-check-modal [(isShowModal)]="isShowExercisesModal" [exercises]="exercises" (clickQuestion)="onClickQuestion($event)"></app-question-check-modal>

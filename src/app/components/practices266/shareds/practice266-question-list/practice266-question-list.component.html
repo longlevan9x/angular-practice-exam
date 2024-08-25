@@ -1,0 +1,31 @@
+<div class="flex cursor-pointer hover:text-blue-700 items-center mb-6" (click)="showExercisesModal()">
+    <span nz-icon nzType="unordered-list" nzTheme="outline" class="text-lg"></span>
+    <p class="ml-2">See all questions</p>
+</div>
+
+@for (exercise of exercises; track $index) {
+<div class="mb-8" #questionCardRef>
+    <app-question-card [exercise]="exercise" [totalQuestion]="totalQuestion"
+        [currentQuestionIndex]="$index+1"></app-question-card>
+</div>
+}
+
+<div class="flex justify-center">
+    <button class="text-white bg-amber-600 hover:bg-amber-500 font-semibold py-3 px-6" (click)="onFinishPractice()">
+        Finish
+    </button>
+</div>
+
+<div class="fixed-button">
+    <button id="show-exer-btn" *ngIf="isShowExerBtn" nzTooltipTitle="See all questions" nz-tooltip
+        (click)="showExercisesModal()" class="fixed  top-[20%] right-[20%] bg-sky-400 text-white p-3 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+        </svg>
+    </button>
+</div>
+
+<app-question-check-modal [(isShowModal)]="isShowExercisesModal" [exercises]="exercises"
+    (clickQuestion)="onClickQuestion($event)"></app-question-check-modal>

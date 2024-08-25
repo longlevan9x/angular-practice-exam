@@ -1,11 +1,14 @@
-<nz-modal [(nzVisible)]="isShowModal" nzTitle="All exercises" class="h-7" [nzCancelText]="null"
-    [nzOkText]="null" (nzOnCancel)="onExerModalOk()" [nzWidth]="700">
+<nz-modal [(nzVisible)]="isShowModal" nzTitle="All exercises" class="h-7" [nzCancelText]="null" [nzOkText]="null"
+    (nzOnCancel)="onExerModalOk()" [nzWidth]="700">
     <ng-container *nzModalContent>
         <div class="bg-white h-[60vh] w-full overflow-y-auto">
             <ul>
                 @for (item of exercises; track item; let index = $index) {
-                <li class="border-b  border-neutral-300 py-2">
-                    <span class="text-base">Question {{ index+1 }}</span>
+                <li class="border-b  border-neutral-300 py-2 cursor-pointer hover:text-sky-700 hover:bg-gray-100">
+                    <span class="text-base" nz-tooltip="Go to question" (click)="onClickQuestion(item.id, index)">
+                        Question {{ index+1 }}
+                        <span nz-icon nzType="aim" nzTheme="outline" class="ml-1"></span>
+                    </span>
                     @if (item.chooseAnwser) {
                     <span class="ml-2 bg-orange-100 text-orange-800 text-xs px-1 py-0 rounded-lg">
                         Answered
