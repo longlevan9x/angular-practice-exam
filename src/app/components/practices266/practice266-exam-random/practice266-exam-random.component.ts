@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ExerciseModel } from '../../../models/exercise.model';
 import { ExerciseService } from '../../../services/exercise.service';
@@ -19,6 +19,8 @@ export class Practice266ExamRandomComponent {
 
     isShowExercisesModal: boolean = false;
     isOpenViewSettingModal: boolean = false;
+
+    isShowExerBtn: boolean = false;
 
     viewCustomize: ViewCustomizeModel = {
         questionPerPage: 50,
@@ -81,5 +83,11 @@ export class Practice266ExamRandomComponent {
 
     onViewSettingOk(): void {
         this.initExercise();
+    }
+
+    @HostListener('window:scroll', [])
+    onWindowScroll() {
+        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        this.isShowExerBtn = scrollPosition > 60;
     }
 }

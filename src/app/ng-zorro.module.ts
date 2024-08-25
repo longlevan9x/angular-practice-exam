@@ -12,6 +12,7 @@ import { NzSwitchModule } from "ng-zorro-antd/switch";
 import { NzTabsModule } from "ng-zorro-antd/tabs";
 import { NzTagModule } from "ng-zorro-antd/tag";
 import { NzTimelineModule } from "ng-zorro-antd/timeline";
+import { NzToolTipModule } from "ng-zorro-antd/tooltip";
 
 @NgModule({
     exports: [
@@ -27,7 +28,8 @@ import { NzTimelineModule } from "ng-zorro-antd/timeline";
         NzSliderModule,
         NzSwitchModule,
         NzTimelineModule,
-        NzCollapseModule
+        NzCollapseModule,
+        NzToolTipModule
     ]
 })
 export class NgZorroModule { }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { ExerciseModel } from '../../../models/exercise.model';
 import { ExerciseService } from '../../../services/exercise.service';
 import { Practice266Service } from '../../../services/practice266.service';
@@ -16,6 +16,7 @@ export class Practices266ExamComponent implements OnInit {
     topicId: number= 0;
 
     isShowExercisesModal: boolean = false;
+    isShowExerBtn: boolean = false;
 
     constructor(
         private practice266Serice: Practice266Service,
@@ -43,5 +44,11 @@ export class Practices266ExamComponent implements OnInit {
 
     showExercisesModal(): void {
         this.isShowExercisesModal = true;
+    }
+
+    @HostListener('window:scroll', [])
+    onWindowScroll() {
+        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        this.isShowExerBtn = scrollPosition > 60;
     }
 }
