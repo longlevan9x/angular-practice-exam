@@ -1,8 +1,18 @@
 <div class="max-w-2xl mx-auto space-y-6">
+    <div class="flex justify-end">
+        <button type="button"
+        routerLink="exam-random"
+            class="bg-rose-600 px-4 py-3 text-base  text-white hover:bg-rose-400">
+            Random
+        </button>
+    </div>
+
+
     <!-- Card 3 -->
-     @for (topic of topics; track $index) {
-        <div>
-            <app-topic-card [topic]="topic" [index]="$index+1" [routerLink]="'/practices/' + topic.id + '/exam'" [totalQuestion]="totalQuesOnTopic"></app-topic-card>
-        </div>
-     }
+    @for (topic of topics; track $index) {
+    <div>
+        <app-topic-card [topic]="topic" [index]="$index+1" [routerLink]="'/practices/' + topic.id + '/exam'"
+            [totalQuestion]="totalQuesOnTopic"></app-topic-card>
+    </div>
+    }
 </div>

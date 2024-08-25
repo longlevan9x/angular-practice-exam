@@ -14,6 +14,8 @@ export class Practices266ExamComponent implements OnInit {
     totalQuestion = 0;
     topicId: number= 0;
 
+    isShowExercisesModal: boolean = false;
+
     constructor(
         private practice266Serice: Practice266Service,
         private activatedRoute: ActivatedRoute,
@@ -34,5 +36,9 @@ export class Practices266ExamComponent implements OnInit {
     onFinishPractice() {
         this.exerciceService.setExerciseObs(this.exercises);
         this.router.navigate(['practices', this.topicId, 'finish']);
+    }
+
+    showExercisesModal(): void {
+        this.isShowExercisesModal = true;
     }
 }

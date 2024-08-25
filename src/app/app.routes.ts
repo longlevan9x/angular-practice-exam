@@ -11,6 +11,7 @@ import { PracticeDetailComponent } from './components/practices/practice-detail/
 import { Practices266ListComponent } from './components/practices266/practices266-list/practices266-list.component';
 import { Practices266ExamComponent } from './components/practices266/practices266-exam/practices266-exam.component';
 import { Practices266FinishComponent } from './components/practices266/practices266-finish/practices266-finish.component';
+import { Practice266ExamRandomComponent } from './components/practices266/practice266-exam-random/practice266-exam-random.component';
 
 export const routes: Routes = [
     {
@@ -98,6 +99,13 @@ export const routes: Routes = [
                 component: Practices266FinishComponent,
                 data: {
                     breadcrumb: "Finish"
+                }
+            },
+            {
+                path: 'exam-random',
+                component: Practice266ExamRandomComponent,
+                data: {
+                    breadcrumb: "Exam"
                 }
             }
         ]

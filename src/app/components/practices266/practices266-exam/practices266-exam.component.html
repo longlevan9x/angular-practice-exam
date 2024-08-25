@@ -1,4 +1,9 @@
 <div class="max-w-6xl mx-auto pb-16">
+    <div class="flex cursor-pointer hover:text-blue-700 items-center mb-6" (click)="showExercisesModal()">
+        <span nz-icon nzType="unordered-list" nzTheme="outline" class="text-lg"></span>
+        <p class="ml-2">See all questions</p>
+    </div>
+    
     @for (exercise of exercises; track $index) {
         <div class="mb-8">
             <app-question-card [exercise]="exercise" [totalQuestion]="totalQuestion" [currentQuestionIndex]="$index+1"></app-question-card>
@@ -11,3 +16,5 @@
         Finish
     </button>
 </div>
+
+<app-question-check-modal [(isShowModal)]="isShowExercisesModal" [exercises]="exercises"></app-question-check-modal>

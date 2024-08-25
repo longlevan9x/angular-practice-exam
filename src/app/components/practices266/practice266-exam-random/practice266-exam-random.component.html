@@ -1,0 +1,35 @@
+<div class="max-w-6xl mx-auto pb-16">
+    <div class="flex justify-between items-center  mb-6">
+        <div class="flex cursor-pointer hover:text-blue-700 items-center" (click)="showExercisesModal()">
+            <span nz-icon nzType="unordered-list" nzTheme="outline" class="text-lg"></span>
+            <p class="ml-2">See all questions</p>
+        </div>
+
+        <button type="button" (click)="onShowViewSetingModal()"
+            class="bg-sky-600 px-3 py-2 text-sm text-white hover:bg-sky-700">
+            View Settings
+        </button>
+    </div>
+    @for (exercise of exercises; track $index) {
+    <div class="mb-8">
+        <app-question-card [isShowExplain]="viewCustomize.isShowFullExplain" [exercise]="exercise"
+            [totalQuestion]="totalQuestion" [currentQuestionIndex]="$index+1"></app-question-card>
+    </div>
+    }
+
+    <div class="flex justify-center">
+        <button class="text-white bg-amber-600 hover:bg-amber-500 font-semibold py-3 px-6" (click)="onFinishPractice()">
+            Finish
+        </button>
+    </div>
+</div>
+
+<app-question-check-modal [(isShowModal)]="isShowExercisesModal" [exercises]="exercises"></app-question-check-modal>
+
+@if (isOpenViewSettingModal) {
+<app-view-customize-modal [(nzVisible)]="isOpenViewSettingModal" (nzOnOk)="onViewSettingOk()"
+    [(isShowAllQuestion)]="viewCustomize.isShowAllQuestion" [(isShowAnswer)]="viewCustomize.isShowAnswer"
+    [(isShowFullExplain)]="viewCustomize.isShowFullExplain" [(questionPerPage)]="viewCustomize.questionPerPage"
+    [(isRandomQuestion)]="viewCustomize.isRandomQuestion">
+</app-view-customize-modal>
+}

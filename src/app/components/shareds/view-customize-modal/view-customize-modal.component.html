@@ -1,0 +1,28 @@
+<nz-modal [(nzVisible)]="nzVisible" nzTitle="View Settings" [nzMask]="false" nzCentered
+    (nzOnCancel)="nzOnCancel()" (nzOnOk)="onOk($event)">
+    <ng-container *nzModalContent>
+        <div class="space-y-2">
+            <div class="flex">
+                <nz-switch [(ngModel)]="isShowAllQuestion" nzSize="small"></nz-switch>
+                <p class="ml-2">Show all questions</p>
+            </div>
+            <div>
+                <p>Questions Per Page: {{questionPerPage}}</p>
+                <nz-slider [nzMax]="200" [(ngModel)]="questionPerPage" [nzDisabled]="isShowAllQuestion"></nz-slider>
+            </div>
+            <div class="flex">
+                <nz-switch [(ngModel)]="isRandomQuestion" nzSize="small"></nz-switch>
+                <p class="ml-2">Random question </p>
+            </div>
+            <div class="flex">
+                <nz-switch nzSize="small" [(ngModel)]="isShowFullExplain"></nz-switch>
+                <p class="ml-2">Display full explain under each question</p>
+            </div>
+            
+            <div class="flex">
+                <nz-switch nzSize="small" [(ngModel)]="isShowAnswer"></nz-switch>
+                <p class="ml-2">Render the questions with answers exposed</p>
+            </div>
+        </div>
+    </ng-container>
+</nz-modal>

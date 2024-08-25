@@ -6,6 +6,8 @@ import { NzListModule } from "ng-zorro-antd/list";
 import { NzModalModule } from "ng-zorro-antd/modal";
 import { NzProgressModule } from "ng-zorro-antd/progress";
 import { NzRadioModule } from "ng-zorro-antd/radio";
+import { NzSliderModule } from "ng-zorro-antd/slider";
+import { NzSwitchModule } from "ng-zorro-antd/switch";
 import { NzTabsModule } from "ng-zorro-antd/tabs";
 import { NzTagModule } from "ng-zorro-antd/tag";
 
@@ -19,7 +21,9 @@ import { NzTagModule } from "ng-zorro-antd/tag";
         NzListModule,
         NzTagModule,
         NzTabsModule,
-        NzBackTopModule
+        NzBackTopModule,
+        NzSliderModule,
+        NzSwitchModule
     ]
 })
 export class NgZorroModule { }

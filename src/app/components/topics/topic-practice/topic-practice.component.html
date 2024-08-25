@@ -58,28 +58,4 @@
     </div>
 </div>
 
-<nz-modal [(nzVisible)]="isShowExercisesModal" nzTitle="All exercises" class="h-7" [nzCancelText]="null"
-    [nzOkText]="null" (nzOnCancel)="onExerModalOk()" [nzWidth]="700">
-    <ng-container *nzModalContent>
-        <div class="bg-white h-[60vh] w-full overflow-y-auto">
-            <ul>
-                @for (item of exercises; track item; let index = $index) {
-                <li class="border-b  border-neutral-300 py-2">
-                    <span class="text-base">Question {{ index+1 }}</span>
-                    @if (item.chooseAnwser) {
-                    <span class="ml-2 bg-orange-100 text-orange-800 text-xs px-1 py-0 rounded-lg">
-                        Answered
-                    </span>
-                    }
-
-                    @if (!item.chooseAnwser) {
-                    <span class="ml-2 bg-neutral-100 text-neutral-800 text-xs px-1 py-0 rounded-lg">
-                        Unanswered
-                    </span>
-                    }
-                </li>
-                }
-            </ul>
-        </div>
-    </ng-container>
-</nz-modal>
+<app-question-check-modal [(isShowModal)]="isShowExercisesModal" [exercises]="exercises"></app-question-check-modal>

@@ -103,10 +103,6 @@ export class TopicPracticeComponent {
         this.isShowExercisesModal = true;
     }
 
-    onExerModalOk(): void {
-        this.isShowExercisesModal = false;
-    }
-
     onFinishPractice() {
         this.exerciceService.setExerciseObs(this.exercises);
         this.router.navigate(['topics', this.topic.id, 'finish']);
