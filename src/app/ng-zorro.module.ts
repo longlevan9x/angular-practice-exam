@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { NzBackTopModule } from "ng-zorro-antd/back-top";
 import { NzCardModule } from "ng-zorro-antd/card";
+import { NzCollapseModule } from "ng-zorro-antd/collapse";
 import { NzGridModule } from "ng-zorro-antd/grid";
 import { NzListModule } from "ng-zorro-antd/list";
 import { NzModalModule } from "ng-zorro-antd/modal";
@@ -10,6 +11,7 @@ import { NzSliderModule } from "ng-zorro-antd/slider";
 import { NzSwitchModule } from "ng-zorro-antd/switch";
 import { NzTabsModule } from "ng-zorro-antd/tabs";
 import { NzTagModule } from "ng-zorro-antd/tag";
+import { NzTimelineModule } from "ng-zorro-antd/timeline";
 
 @NgModule({
     exports: [
@@ -23,7 +25,9 @@ import { NzTagModule } from "ng-zorro-antd/tag";
         NzTabsModule,
         NzBackTopModule,
         NzSliderModule,
-        NzSwitchModule
+        NzSwitchModule,
+        NzTimelineModule,
+        NzCollapseModule
     ]
 })
 export class NgZorroModule { }

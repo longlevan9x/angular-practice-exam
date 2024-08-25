@@ -15,4 +15,16 @@ export class Practice266Service {
     getAllPractice() {
         return practices266;
     }
+
+    getStartEndIndex(id: number, total: number = 10, numOnPage: number = 20): { startIndex: number, endIndex: number } {
+        let startIndex = (id - 1) * numOnPage;
+        let endIndex = (id - 1) * numOnPage + numOnPage;
+
+        if (id <= 0) {
+            startIndex = numOnPage * total;
+            endIndex = -1;
+        }
+
+        return { startIndex, endIndex };
+    }
 }

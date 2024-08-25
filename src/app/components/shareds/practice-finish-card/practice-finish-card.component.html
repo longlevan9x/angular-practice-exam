@@ -6,8 +6,8 @@
         <nz-tab nzTitle="all questions" [nzAnimated]="false">
             @for (exercise of exercises; track $index) {
             <div class="mb-8">
-                <app-question-card [currentQuestionIndex]="$index+1" [exercise]="exercise"
-                    [totalQuestion]="exercises.length" [isShowExplain]="true" [isShowAnswer]="true"
+                <app-question-card [currentQuestionIndex]="$index+1" [exercise]="exercise" [isShowHistory]="true"
+                    [totalQuestion]="exercises.length" [isShowExplain]="isShowExplain" [isShowAnswer]="true"
                     [isAllowEditAnswer]="false" [isResult]="true"></app-question-card>
             </div>
             }
@@ -17,8 +17,8 @@
 
             @if (exercise.chooseAnwser === exercise.anwser) {
             <div class="mb-8">
-                <app-question-card [currentQuestionIndex]="$index+1" [exercise]="exercise"
-                    [totalQuestion]="exercises.length" [isShowExplain]="true" [isShowAnswer]="true"
+                <app-question-card [currentQuestionIndex]="$index+1" [exercise]="exercise" [isShowHistory]="true"
+                    [totalQuestion]="exercises.length" [isShowExplain]="isShowExplain" [isShowAnswer]="true"
                     [isAllowEditAnswer]="false" [isResult]="true"></app-question-card>
             </div>
             }
@@ -30,8 +30,8 @@
 
             @if (exercise.chooseAnwser !== exercise.anwser) {
             <div class="mb-8">
-                <app-question-card [currentQuestionIndex]="$index+1" [exercise]="exercise"
-                    [totalQuestion]="exercises.length" [isShowExplain]="true" [isShowAnswer]="true"
+                <app-question-card [currentQuestionIndex]="$index+1" [exercise]="exercise" [isShowHistory]="true"
+                    [totalQuestion]="exercises.length" [isShowExplain]="isShowExplain" [isShowAnswer]="true"
                     [isAllowEditAnswer]="false" [isResult]="true"></app-question-card>
             </div>
             }

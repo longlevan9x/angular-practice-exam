@@ -8,4 +8,5 @@ export interface ExerciseModel {
     anwser?: string
     explain?: string
     chooseAnwser?: string
+    histories?: any[]
 }

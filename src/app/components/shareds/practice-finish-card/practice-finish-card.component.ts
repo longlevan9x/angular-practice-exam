@@ -15,14 +15,14 @@ export class PracticeFinishCardComponent implements OnInit {
     retestUrl: string = '';
     @Input()
     passedScrore = 85;
-    
+    @Input() 
+    isShowExplain: boolean = true;
+
     totalCorrectAnswer = 0;
     totalWrongAnswer = 0;
     totalQuestion = 0;
     scrore = 0;
     isPassed = false;
-
-   
 
     constructor(
         private exerciseService: ExerciseService,
