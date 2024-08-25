@@ -5,16 +5,10 @@
 
 @for (exercise of exercises; track $index) {
 <div class="mb-8" #questionCardRef>
-    <app-question-card [exercise]="exercise" [totalQuestion]="totalQuestion"
+    <app-question-card [exercise]="exercise" [totalQuestion]="totalQuestion" [isShowExplain]="isShowExplain"
         [currentQuestionIndex]="$index+1"></app-question-card>
 </div>
 }
-
-<div class="flex justify-center">
-    <button class="text-white bg-amber-600 hover:bg-amber-500 font-semibold py-3 px-6" (click)="onFinishPractice()">
-        Finish
-    </button>
-</div>
 
 <div class="fixed-button">
     <button id="show-exer-btn" *ngIf="isShowExerBtn" nzTooltipTitle="See all questions" nz-tooltip

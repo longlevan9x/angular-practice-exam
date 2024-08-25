@@ -11,7 +11,7 @@
         </button>
     </div>
     @for (exercise of exercises; track $index) {
-    <div class="mb-8">
+    <div class="mb-8" #questionCardRef>
         <app-question-card [isShowExplain]="viewCustomize.isShowFullExplain" [exercise]="exercise"
             [totalQuestion]="totalQuestion" [currentQuestionIndex]="$index+1"></app-question-card>
     </div>
@@ -35,7 +35,8 @@
     </div>
 </div>
 
-<app-question-check-modal [(isShowModal)]="isShowExercisesModal" [exercises]="exercises"></app-question-check-modal>
+<app-question-check-modal [(isShowModal)]="isShowExercisesModal" [exercises]="exercises"
+    (clickQuestion)="onClickQuestion($event)"></app-question-check-modal>
 
 @if (isOpenViewSettingModal) {
 <app-view-customize-modal [(nzVisible)]="isOpenViewSettingModal" (nzOnOk)="onViewSettingOk()"

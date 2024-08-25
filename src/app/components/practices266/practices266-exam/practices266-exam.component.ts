@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { Component, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { ExerciseModel } from '../../../models/exercise.model';
 import { ExerciseService } from '../../../services/exercise.service';
 import { Practice266Service } from '../../../services/practice266.service';
@@ -14,9 +14,6 @@ export class Practices266ExamComponent implements OnInit {
     exercises: ExerciseModel[] = [];
     totalQuestion = 0;
     topicId: number = 0;
-
-    isShowExercisesModal: boolean = false;
-    isShowExerBtn: boolean = false;
 
     @ViewChildren('questionCardRef') questionCardElements!: QueryList<any>;
 
@@ -42,26 +39,5 @@ export class Practices266ExamComponent implements OnInit {
         this.exerciceService.setExerciseObs(this.exercises);
         this.practiceHistoryService.savePractice266Question(this.exercises);
         this.router.navigate(['practices', this.topicId, 'finish']);
-    }
-
-    showExercisesModal(): void {
-        this.isShowExercisesModal = true;
-    }
-
-    @HostListener('window:scroll', [])
-    onWindowScroll() {
-        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-        this.isShowExerBtn = scrollPosition > 60;
-    }
-
-    onClickQuestion(question?: { id: number, index: number } | any) {
-        this.isShowExercisesModal = false;
-        setTimeout(() => {
-            const sectionArray = this.questionCardElements.toArray();
-            const element = sectionArray[question.index].nativeElement;
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        }, 300);
     }
 }

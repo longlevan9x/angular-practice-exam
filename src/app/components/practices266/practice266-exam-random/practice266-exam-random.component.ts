@@ -1,4 +1,4 @@
-import { Component, HostListener, Input } from '@angular/core';
+import { Component, HostListener, Input, QueryList, ViewChildren } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ExerciseModel } from '../../../models/exercise.model';
 import { ExerciseService } from '../../../services/exercise.service';
@@ -29,6 +29,8 @@ export class Practice266ExamRandomComponent {
         isShowFullExplain: false,
         isShowAllQuestion: false
     }
+
+    @ViewChildren('questionCardRef') questionCardElements!: QueryList<any>;
 
     constructor(
         private practice266Serice: Practice266Service,
@@ -89,5 +91,16 @@ export class Practice266ExamRandomComponent {
     onWindowScroll() {
         const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
         this.isShowExerBtn = scrollPosition > 60;
+    }
+
+    onClickQuestion(question?: { id: number, index: number } | any) {
+        this.isShowExercisesModal = false;
+        setTimeout(() => {
+            const sectionArray = this.questionCardElements.toArray();
+            const element = sectionArray[question.index].nativeElement;
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }, 300);
     }
 }
