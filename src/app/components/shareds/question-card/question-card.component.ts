@@ -34,4 +34,8 @@ export class QuestionCardComponent implements OnInit {
             this.exercise.histories = this.practiceHistoryService.getQuestionWithId(this.exercise.id);
         }
     }
+
+    onCheckAnser() {
+        this.isShowAnswer = !this.isShowAnswer;
+    }
 }

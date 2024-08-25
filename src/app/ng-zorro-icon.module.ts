@@ -7,7 +7,8 @@ import {
     StarOutline,
     RightOutline,
     LeftOutline,
-    UnorderedListOutline
+    UnorderedListOutline,
+    RocketOutline
 } from '@ant-design/icons-angular/icons';
 
 const icons = [
@@ -17,7 +18,8 @@ const icons = [
     StarOutline,
     RightOutline,
     LeftOutline,
-    UnorderedListOutline
+    UnorderedListOutline,
+    RocketOutline
 ];
 
 @NgModule({

@@ -1,12 +1,15 @@
 <div class="max-w-full bg-white border border-cyan-200 p-4 mt-3">
     <div class="flex justify-between items-center mb-4">
         <div class="text-gray-700">
-            <h2 class="text-xl font-bold text-gray-800 mb-2">
+            <h2 class="text-xl font-bold text-gray-800">
                 <span class="font-bold">Question:</span>
                 {{currentQuestionIndex}} of {{totalQuestion}}
             </h2>
         </div>
         <div class="text-gray-700">
+            <span nz-icon nzType="rocket" nz-tooltip="Check answer"
+                (click)="onCheckAnser()"
+                class="cursor-pointer text-xl text-sky-800 hover:text-amber-800" nzTheme="outline"></span>
         </div>
     </div>
 
@@ -52,26 +55,26 @@
     }
 
     @if (isShowHistory) {
-        <nz-collapse [nzBordered]="false" class="bg-stone-100">
-            <nz-collapse-panel nzHeader="Histories" (nzActiveChange)="onShowHistoryChange( $event)">
-                <div>
-                    <nz-timeline>
-                        @for (history of exercise.histories; track $index) {
-                        <nz-timeline-item [nzColor]="history.chooseAnwser==exercise.anwser ? 'green' : 'red'">
-                            <span class="font-semibold mr-2">
-                                {{history.chooseAnwser}}:
-                            </span>
-                            <span>
-                                {{history.date | date : 'yyyy-MM-dd HH:mm:ss'}}
-                            </span>
-                        </nz-timeline-item>
-                        }
-                    </nz-timeline>
-                </div>
-            </nz-collapse-panel>
-        </nz-collapse>
+    <nz-collapse [nzBordered]="false" class="bg-stone-100">
+        <nz-collapse-panel nzHeader="Histories" (nzActiveChange)="onShowHistoryChange( $event)">
+            <div>
+                <nz-timeline>
+                    @for (history of exercise.histories; track $index) {
+                    <nz-timeline-item [nzColor]="history.chooseAnwser==exercise.anwser ? 'green' : 'red'">
+                        <span class="font-semibold mr-2">
+                            {{history.chooseAnwser}}:
+                        </span>
+                        <span>
+                            {{history.date | date : 'yyyy-MM-dd HH:mm:ss'}}
+                        </span>
+                    </nz-timeline-item>
+                    }
+                </nz-timeline>
+            </div>
+        </nz-collapse-panel>
+    </nz-collapse>
     }
-   
+
 </div>
 
 <ng-template #answerTemp let-value="value" let-answer="answer" let-correctAnswer="correctAnswer">
