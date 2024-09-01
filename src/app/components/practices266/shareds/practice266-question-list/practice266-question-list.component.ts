@@ -30,7 +30,7 @@ export class Practice266QuestionListComponent {
 
     @HostListener('window:scroll', [])
     onWindowScroll() {
-        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        const scrollPosition = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
         this.isShowExerBtn = scrollPosition > 60;
     }
 

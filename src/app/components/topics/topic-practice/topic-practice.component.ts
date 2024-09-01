@@ -67,7 +67,7 @@ export class TopicPracticeComponent {
             return;
         }
 
-        this.exercises[this.currentQuestionIndex].chooseAnwser = this.exercise.chooseAnwser;
+        this.exercises[this.currentQuestionIndex].chooseAnswer = this.exercise.chooseAnswer;
         this.currentQuestionIndex -= 1;
         this.exercise = this.exercises[this.currentQuestionIndex];
     }
@@ -77,7 +77,7 @@ export class TopicPracticeComponent {
             return;
         }
 
-        this.exercises[this.currentQuestionIndex].chooseAnwser = this.exercise.chooseAnwser;
+        this.exercises[this.currentQuestionIndex].chooseAnswer = this.exercise.chooseAnswer;
         this.currentQuestionIndex += 1;
         this.exercise = this.exercises[this.currentQuestionIndex];
     }

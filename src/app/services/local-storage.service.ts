@@ -25,6 +25,10 @@ export class LocalStorageService {
         }
     }
 
+    getItemArray<T>(key: string): T[]  {
+        return this.getItem(key) as T[] || [];
+    }
+
     removeItem(key: string): void {
         try {
             localStorage.removeItem(key);

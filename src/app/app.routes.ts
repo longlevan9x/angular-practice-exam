@@ -12,6 +12,9 @@ import { Practices266ListComponent } from './components/practices266/practices26
 import { Practices266ExamComponent } from './components/practices266/practices266-exam/practices266-exam.component';
 import { Practices266FinishComponent } from './components/practices266/practices266-finish/practices266-finish.component';
 import { Practice266ExamRandomComponent } from './components/practices266/practice266-exam-random/practice266-exam-random.component';
+import {
+    Practice266BookmarkComponent
+} from "./components/practices266/practice266-bookmark/practice266-bookmark.component";
 
 export const routes: Routes = [
     {
@@ -113,6 +116,13 @@ export const routes: Routes = [
                 component: Practices266FinishComponent,
                 data: {
                     breadcrumb: "Finish"
+                }
+            },
+            {
+                path: 'bookmark',
+                component: Practice266BookmarkComponent,
+                data: {
+                    breadcrumb: "Bookmark"
                 }
             }
         ]

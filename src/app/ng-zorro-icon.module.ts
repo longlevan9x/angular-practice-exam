@@ -9,7 +9,10 @@ import {
     LeftOutline,
     UnorderedListOutline,
     RocketOutline,
-    AimOutline
+    AimOutline,
+    BookOutline,
+    HistoryOutline,
+    BookFill,
 } from '@ant-design/icons-angular/icons';
 
 const icons = [
@@ -21,7 +24,10 @@ const icons = [
     LeftOutline,
     UnorderedListOutline,
     RocketOutline,
-    AimOutline
+    AimOutline,
+    BookOutline,
+    HistoryOutline,
+    BookFill,
 ];
 
 @NgModule({

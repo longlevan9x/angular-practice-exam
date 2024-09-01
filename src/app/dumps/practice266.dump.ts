@@ -6,7 +6,7 @@ export const practices266 = [
         B: "B. Ask each member of the team to generate a new SSH key pair and to send you their public key. Use a configuration management tool to deploy those keys on each instance. ",
         C: "C. Ask each member of the team to generate a new SSH key pair and to add the public key to their Google account. Grant the compute.osAdminLogin role to the Google group corresponding to this team. ",
         D: "D. Generate a new SSH key pair. Give the private key to each member of your team. Configure the public key as a project-wide public SSH key in your Cloud Platform project and allow project-wide public SSH keys on each instance.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 2,
@@ -15,7 +15,7 @@ export const practices266 = [
         B: "B. 10.0.0.0/8 ",
         C: "C. 172.16.0.0/12 ",
         D: "D. 192.168.0.0/16",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 3,
@@ -24,7 +24,7 @@ export const practices266 = [
         B: "B. Select Cloud SQL (MySQL). Select the create failover replicas option. ",
         C: "C. Select Cloud Spanner. Set up your instance with 2 nodes. ",
         D: "D. Select Cloud Spanner. Set up your instance as multi-regional.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 4,
@@ -33,7 +33,7 @@ export const practices266 = [
         B: "B. Create an HTTP load balancer with a backend configuration that references an existing instance group. Define a balancing mode and set the maximum RPS to 10. ",
         C: "C. Create a managed instance group. Set the Autohealing health check to healthy (HTTP) ",
         D: "D. Create a managed instance group. Verify that the autoscaling setting is on.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 5,
@@ -42,7 +42,7 @@ export const practices266 = [
         B: "B. Use gcloud config configurations activate and gcloud config list to review the output. ",
         C: "C. Use kubectl config get-contexts to review the output. ",
         D: "D. Use kubectl config use-context and kubectl config view to review the output.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 6,
@@ -51,7 +51,7 @@ export const practices266 = [
         B: "B. Regional Storage ",
         C: "C. Nearline Storage ",
         D: "D. Coldline Storage",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 7,
@@ -60,7 +60,7 @@ export const practices266 = [
         B: "B. Create a ticket with Google Support and wait for their call to share your credit card details over the phone. ",
         C: "C. In the Google Platform Console, go to the Resource Manage and move all projects to the root Organizarion. ",
         D: "D. In the Google Cloud Platform Console, create a new billing account and set up a payment method.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 8,
@@ -69,7 +69,7 @@ export const practices266 = [
         B: "B. Reserve the IP 10.0.3.21 as a static public IP address using gcloud and assign it to the licensing server. ",
         C: "C. Use the IP 10.0.3.21 as a custom ephemeral IP address and assign it to the licensing server. ",
         D: "D. Start the licensing server with an automatic ephemeral IP address, and then promote it to a static internal IP address.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 9,
@@ -78,7 +78,7 @@ export const practices266 = [
         B: "B. Basic Scaling with min_instances set to 3. ",
         C: "C. Basic Scaling with max_instances set to 3. ",
         D: "D. Automatic Scaling with min_idle_instances set to 3.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 10,
@@ -87,7 +87,7 @@ export const practices266 = [
         B: "B. Use gcloud iam roles copy and specify your organization as the destination organization. ",
         C: "C. In the Google Cloud Platform Console, use the 'create role from role' functionality. ",
         D: "D. In the Google Cloud Platform Console, use the 'create role' functionality and select all applicable permissions.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 11,
@@ -96,7 +96,7 @@ export const practices266 = [
         B: "B. Cloud Composer ",
         C: "C. Managed Instance Group ",
         D: "D. Unmanaged Instance Group",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 12,
@@ -105,7 +105,7 @@ export const practices266 = [
         B: "B. Use gcloud app deploy . ",
         C: "C. Create a docker image from the Dockerfile and upload it to Container Registry. Create a Deployment YAML file to point to that image. Use kubectl to create the deployment with that file. ",
         D: "D. Create a docker image from the Dockerfile and upload it to Cloud Storage. Create a Deployment YAML file to point to that image. Use kubectl to create the deployment with that file.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 13,
@@ -114,7 +114,7 @@ export const practices266 = [
         B: "B. Create a new Compute Engine instance and install Jenkins through the command line interface. ",
         C: "C. Create a Kubernetes cluster on Compute Engine and create a deployment with the Jenkins Docker image. ",
         D: "D. Use GCP Marketplace to launch the Jenkins solution.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 14,
@@ -123,7 +123,7 @@ export const practices266 = [
         B: "B. gcloud deployment-manager deployments update --config  ",
         C: "C. gcloud deployment-manager resources create --config  ",
         D: "D. gcloud deployment-manager resources update --config",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 15,
@@ -132,7 +132,7 @@ export const practices266 = [
         B: "B. Use the command line to run a dry run query to estimate the number of bytes read. Then convert that bytes estimate to dollars using the Pricing Calculator. ",
         C: "C. Use the command line to run a dry run query to estimate the number of bytes returned. Then convert that bytes estimate to dollars using the Pricing Calculator. ",
         D: "D. Run a select count (*) to get an idea of how many records your query will look through. Then convert that number of rows to dollars using the Pricing Calculator.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 16,
@@ -141,7 +141,7 @@ export const practices266 = [
         B: "B. Create an instance template, and use the template in a managed instance group with autoscaling configured. ",
         C: "C. Create an instance template, and use the template in a managed instance group that scales up and down based on the time of day. ",
         D: "D. Use a set of third-party tools to build automation around scaling the application up and down, based on Stackdriver CPU usage monitoring.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 17,
@@ -150,7 +150,7 @@ export const practices266 = [
         B: "B. Export your bill to a Cloud Storage bucket, and then import into Google Sheets for analysis. ",
         C: "C. Export your transactions to a local file, and perform analysis with a desktop tool. ",
         D: "D. Export your bill to a BigQuery dataset, and then write time window-based SQL queries for analysis.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 18,
@@ -159,7 +159,7 @@ export const practices266 = [
         B: "B. Use Cloud Storage Object Lifecycle Management using Age conditions with SetStorageClass and Delete actions. Set the SetStorageClass action to 90 days and the Delete action to 365 days. ",
         C: "C. Use gsutil rewrite and set the Delete action to 275 days (365-90). ",
         D: "D. Use gsutil rewrite and set the Delete action to 365 days.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 19,
@@ -168,7 +168,7 @@ export const practices266 = [
         B: "B. Download a JSON Private Key for the service account. On the Project Metadata, add that JSON as the value for the key compute-engineservice- account. ",
         C: "C. Download a JSON Private Key for the service account. On the Custom Metadata of the VM, add that JSON as the value for the key computeengine- service-account. ",
         D: "D. Download a JSON Private Key for the service account. After creating the VM, ssh into the VM and save the JSON under ~/.gcloud/computeengine-service- account.json.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 20,
@@ -177,7 +177,7 @@ export const practices266 = [
         B: "B. Install a RDP client in your desktop. Set a Windows username and password in the GCP Console. Use the credentials to log in to the instance. ",
         C: "C. Set a Windows password in the GCP Console. Verify that a firewall rule for port 22 exists. Click the RDP button in the GCP Console and supply the credentials to log in. ",
         D: "D. Set a Windows username and password in the GCP Console. Verify that a firewall rule for port 3389 exists. Click the RDP button in the GCP Console, and supply the credentials to log in.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 21,
@@ -186,7 +186,7 @@ export const practices266 = [
         B: "B. Create two configurations using gcloud config configurations create [NAME]. Run gcloud configurations list to start the Compute Engine instances. ",
         C: "C. Activate two configurations using gcloud configurations activate [NAME]. Run gcloud config list to start the Compute Engine instances. ",
         D: "D. Activate two configurations using gcloud configurations activate [NAME]. Run gcloud configurations list to start the Compute Engine instances.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 22,
@@ -195,7 +195,7 @@ export const practices266 = [
         B: "B. Monitor activity of the Deployment Manager execution on the Stackdriver Logging page of the GCP Console. ",
         C: "C. Execute the Deployment Manager template against a separate project with the same configuration, and monitor for failures. ",
         D: "D. Execute the Deployment Manager template using the -preview option in the same project, and observe the state of interdependent resources.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 23,
@@ -204,7 +204,7 @@ export const practices266 = [
         B: "B. Firebase Messages, Cloud Pub/Sub, Cloud Spanner, BigQuery ",
         C: "C. Cloud Pub/Sub, Cloud Storage, BigQuery, Cloud Bigtable ",
         D: "D. Cloud Pub/Sub, Cloud Dataflow, Cloud Bigtable, BigQuery",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 24,
@@ -213,7 +213,7 @@ export const practices266 = [
         B: "B. Use gcloud to create the new project and to copy the deployed application to the new project. ",
         C: "C. Create a Deployment Manager configuration file that copies the current App Engine deployment into a new project. ",
         D: "D. Deploy your application again using gcloud and specify the project parameter with the new project name to create the new project.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 25,
@@ -222,7 +222,7 @@ export const practices266 = [
         B: "B. Add the auditors group to two new custom IAM roles. ",
         C: "C. Add the auditor user accounts to the 'logging.viewer' and 'bigQuery.dataViewer' predefined IAM roles. ",
         D: "D. Add the auditor user accounts to two new custom IAM roles.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 26,
@@ -231,7 +231,7 @@ export const practices266 = [
         B: "B. Create a service account with an access scope. Use the access scope 'https://www.googleapis.com/auth/cloud-platform'. ",
         C: "C. Create a service account and add it to the IAM role 'storage.objectCreator' for that bucket. ",
         D: "D. Create a service account and add it to the IAM role 'storage.objectAdmin' for that bucket.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 27,
@@ -240,7 +240,7 @@ export const practices266 = [
         B: "B. Using the GCP Console, filter the Stackdriver log to view the information. ",
         C: "C. View the bucket in the Storage section of the GCP Console. ",
         D: "D. Create a trace in Stackdriver to view the information.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 28,
@@ -249,7 +249,7 @@ export const practices266 = [
         B: "B. Storage Admin ",
         C: "C. Storage Object Admin ",
         D: "D. Storage Object Creator",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 29,
@@ -258,7 +258,7 @@ export const practices266 = [
         B: "B. Set object access to 'public' and use object lifecycle management to remove the object after four hours. ",
         C: "C. Configure the storage bucket as a static website and furnish the object's URL to the company. Delete the object from the storage bucket after four hours. ",
         D: "D. Create a new Cloud Storage bucket specifically for the external company to access. Copy the object to that bucket. Delete the bucket after four hours have passed.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 30,
@@ -267,7 +267,7 @@ export const practices266 = [
         B: "B. Deploy the monitoring pod in a DaemonSet object. ",
         C: "C. Reference the monitoring pod in a Deployment object. ",
         D: "D. Reference the monitoring pod in a cluster initializer at the GKE cluster creation time.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 31,
@@ -276,7 +276,7 @@ export const practices266 = [
         B: "B. Rely on the automatic enablement of the Cloud Pub/Sub API when the Service Account accesses it. ",
         C: "C. Use Deployment Manager to deploy your application. Rely on the automatic enablement of all APIs used by the application being deployed. ",
         D: "D. Grant the App Engine Default service account the role of Cloud Pub/Sub Admin. Have your application enable the API on the first connection to Cloud Pub/ Sub.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 32,
@@ -285,7 +285,7 @@ export const practices266 = [
         B: "B. For each project, create a Stackdriver account. In each project, create a service account for that project and grant it the role of Stackdriver Account Editor in all other projects. ",
         C: "C. Configure a single Stackdriver account, and link all projects to the same account. ",
         D: "D. Configure a single Stackdriver account for one of the projects. In Stackdriver, create a Group and add the other project names as criteria for that Group.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 33,
@@ -294,7 +294,7 @@ export const practices266 = [
         B: "B. Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 1. ",
         C: "C. Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 2. ",
         D: "D. Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 2.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 34,
@@ -303,7 +303,7 @@ export const practices266 = [
         B: "B. Run gcloud iam service-accounts list. Review the output section. ",
         C: "C. Navigate to the project and then to the IAM section in the GCP Console. Review the members and roles. ",
         D: "D. Navigate to the project and then to the Roles section in the GCP Console. Review the roles and status.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 35,
@@ -312,7 +312,7 @@ export const practices266 = [
         B: "B. Verify that you are Project Billing Manager for the GCP project. Create a new billing account and link the new billing account to the existing project. ",
         C: "C. Verify that you are Billing Administrator for the billing account. Create a new project and link the new project to the existing billing account. ",
         D: "D. Verify that you are Billing Administrator for the billing account. Update the existing project to link it to the existing billing account.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 36,
@@ -321,7 +321,7 @@ export const practices266 = [
         B: "B. Download the private key from the service account, and add the private key to each VM's SSH keys. ",
         C: "C. Grant the service account the IAM Role of Compute Storage Admin in the project called proj-vm. ",
         D: "D. When creating the VMs, set the service account's API scope for Compute Engine to read/write.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 37,
@@ -330,7 +330,7 @@ export const practices266 = [
         B: "B. Change the region property setting in the existing App Engine application from us-central to asia-northeast1. ",
         C: "C. Create a second App Engine application in the existing GCP project and specify asia-northeast1 as the region to serve your application. ",
         D: "D. Create a new GCP project and create an App Engine application inside this new project. Specify asia-northeast1 as the region to serve your application.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 38,
@@ -339,7 +339,7 @@ export const practices266 = [
         B: "B. Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to a new group. Add the group to the role. ",
         C: "C. Run gcloud iam roles describe roles/spanner.viewer - -project my-project. Add the users to the role. ",
         D: "D. Run gcloud iam roles describe roles/spanner.viewer - -project my-project. Add the users to a new group. Add the group to the role.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 39,
@@ -348,7 +348,7 @@ export const practices266 = [
         B: "B. Enable the Node Auto-Upgrades feature for your GKE cluster. ",
         C: "C. Select the latest available cluster version for your GKE cluster. ",
         D: "D. Select Container-Optimized OS (cos) as a node image for your GKE cluster.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 40,
@@ -357,7 +357,7 @@ export const practices266 = [
         B: "B. Configure an internal TCP load balancer. ",
         C: "C. Configure an external SSL proxy load balancer. ",
         D: "D. Configure an external TCP proxy load balancer.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 41,
@@ -366,7 +366,7 @@ export const practices266 = [
         B: "B. Enable parallel composite uploads using gsutil on the file transfer. ",
         C: "C. Decrease the TCP window size on the machine initiating the transfer. ",
         D: "D. Change the storage class of the bucket from Nearline to Multi-Regional.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 42,
@@ -375,7 +375,7 @@ export const practices266 = [
         B: "B. Store the database password inside a Secret object. Modify the YAML file to populate the DB_PASSWORD environment variable from the Secret. ",
         C: "C. Store the database password inside a ConfigMap object. Modify the YAML file to populate the DB_PASSWORD environment variable from the ConfigMap. ",
         D: "D. Store the database password in a file inside a Kubernetes persistent volume, and use a persistent volume claim to mount the volume to the container.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 43,
@@ -384,7 +384,7 @@ export const practices266 = [
         B: "B. Decrease the maximum number of instances to 3. ",
         C: "C. Use a TCP health check instead of an HTTP health check. ",
         D: "D. Increase the initial delay of the HTTP health check to 200 seconds.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 44,
@@ -393,7 +393,7 @@ export const practices266 = [
         B: "B. Select Google Kubernetes Engine. Use a three-node cluster with micro instance types. ",
         C: "C. Select Compute Engine. Use preemptible VM instances of the appropriate standard machine type. ",
         D: "D. Select Compute Engine. Use VM instance types that support micro bursting.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 45,
@@ -402,7 +402,7 @@ export const practices266 = [
         B: "B. On the App Engine page of the GCP Console, select the application that needs to be reverted and click Revert. ",
         C: "C. On the App Engine Versions page of the GCP Console, route 100% of the traffic to the previous version. ",
         D: "D. Deploy the original version as a separate application. Then go to App Engine settings and split traffic between applications so that the original version serves 100% of the requests.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 46,
@@ -411,7 +411,7 @@ export const practices266 = [
         B: "B. Check the web-application.xml file for your application and check project settings. ",
         C: "C. Go to Deployment Manager and review settings for deployment of applications. ",
         D: "D. Go to Cloud Shell and run gcloud config list to review the Google Cloud configuration used for deployment.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 47,
@@ -420,7 +420,7 @@ export const practices266 = [
         B: "B. Create an instance template for the instances. Set 'Automatic Restart' to off. Set 'On-host maintenance' to Terminate VM instances. Add the instance template to an instance group. ",
         C: "C. Create an instance group for the instances. Set the 'Autohealing' health check to healthy (HTTP). ",
         D: "D. Create an instance group for the instance. Verify that the 'Advanced creation options' setting for 'do not retry machine creation' is set to off.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 48,
@@ -429,7 +429,7 @@ export const practices266 = [
         B: "B. Enable 'Share publicly' on the PDF file objects. ",
         C: "C. Set Content-Type metadata to application/pdf on the PDF file objects. ",
         D: "D. Add a label to the storage bucket with a key of Content-Type and value of application/pdf.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 49,
@@ -438,7 +438,7 @@ export const practices266 = [
         B: "B. Use gcloud to add metadata to the VM. Set the key to required-memory-size and the value to 8 GB. ",
         C: "C. Stop the VM, change the machine type to n1-standard-8, and start the VM. ",
         D: "D. Stop the VM, increase the memory to 8 GB, and start the VM.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 50,
@@ -447,7 +447,7 @@ export const practices266 = [
         B: "B. Create a single custom VPC with 2 subnets. Create each subnet in the same region and with the same CIDR range. ",
         C: "C. Create 2 custom VPCs, each with a single subnet. Create each subnet in a different region and with a different CIDR range. ",
         D: "D. Create 2 custom VPCs, each with a single subnet. Create each subnet in the same region and with the same CIDR range.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 51,
@@ -456,7 +456,7 @@ export const practices266 = [
         B: "B. Select Multi-Zone instead of Single-Zone when creating the Managed Instance Group. ",
         C: "C. In the Instance Template, add the label 'health-check'. ",
         D: "D. In the Instance Template, add a startup script that sends a heartbeat to the metadata server.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 52,
@@ -465,7 +465,7 @@ export const practices266 = [
         B: "B. 1. Create an IAM entry for each data scientist's user account. 2. Assign the BigQuery dataViewer user role to the group. ",
         C: "C. 1. Create a dedicated Google group in Cloud Identity. 2. Add each data scientist's user account to the group. 3. Assign the BigQuery jobUser role to the group. ",
         D: "D. 1. Create a dedicated Google group in Cloud Identity. 2. Add each data scientist's user account to the group. 3. Assign the BigQuery dataViewer user role to the group.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 53,
@@ -474,7 +474,7 @@ export const practices266 = [
         B: "B. 1. Create an ingress firewall rule with the following settings: \xa2 Targets: all instances with tier #2 service account \xa2 Source filter: all instances with tier #1 service account \xa2 Protocols: allow TCP:8080 2. Create an ingress firewall rule with the following settings: \xa2 Targets: all instances with tier #3 service account \xa2 Source filter: all instances with tier #2 service account \xa2 Protocols: allow TCP: 8080 ",
         C: "C. 1. Create an ingress firewall rule with the following settings: \xa2 Targets: all instances with tier #2 service account \xa2 Source filter: all instances with tier #1 service account \xa2 Protocols: allow all 2. Create an ingress firewall rule with the following settings: \xa2 Targets: all instances with tier #3 service account \xa2 Source filter: all instances with tier #2 service account \xa2 Protocols: allow all ",
         D: "D. 1. Create an egress firewall rule with the following settings: \xa2 Targets: all instances \xa2 Source filter: IP ranges (with the range set to 10.0.2.0/24) \xa2 Protocols: allow TCP: 8080 2. Create an egress firewall rule with the following settings: \xa2 Targets: all instances \xa2 Source filter: IP ranges (with the range set to 10.0.1.0/24) \xa2 Protocols: allow TCP: 8080",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 54,
@@ -483,7 +483,7 @@ export const practices266 = [
         B: "B. 1. Create a VPC and a subnetwork in europe-west1. 2. Expose the application with an internal load balancer. 3. Create the new instance in the new subnetwork and use the load balancer's address as the endpoint. ",
         C: "C. 1. Create a subnetwork in the same VPC, in europe-west1. 2. Use Cloud VPN to connect the two subnetworks. 3. Create the new instance in the new subnetwork and use the first instance's private address as the endpoint. ",
         D: "D. 1. Create a VPC and a subnetwork in europe-west1. 2. Peer the 2 VPCs. 3. Create the new instance in the new subnetwork and use the first instance's private address as the endpoint.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 55,
@@ -492,7 +492,7 @@ export const practices266 = [
         B: "B. 1. Go to the Logs ingestion window in Stackdriver Logging, and disable the log source for the GKE Cluster Operations resource. ",
         C: "C. 1. Go to the GKE console, and delete existing clusters. 2. Recreate a new cluster. 3. Clear the option to enable legacy Stackdriver Logging. ",
         D: "D. 1. Go to the GKE console, and delete existing clusters. 2. Recreate a new cluster. 3. Clear the option to enable legacy Stackdriver Monitoring.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 56,
@@ -501,7 +501,7 @@ export const practices266 = [
         B: "B. Deploy the new version in the same application and use the --splits option to give a weight of 99 to the current version and a weight of 1 to the new version. ",
         C: "C. Create a new App Engine application in the same project. Deploy the new version in that application. Use the App Engine library to proxy 1% of the requests to the new version. ",
         D: "D. Create a new App Engine application in the same project. Deploy the new version in that application. Configure your network load balancer to send 1% of the traffic to that new application.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 57,
@@ -510,7 +510,7 @@ export const practices266 = [
         B: "B. Perform a rolling-action start-update with maxSurge set to 1 and maxUnavailable set to 0. ",
         C: "C. Create a new managed instance group with an updated instance template. Add the group to the backend service for the load balancer. When all instances in the new managed instance group are healthy, delete the old managed instance group. ",
         D: "D. Create a new instance template with the new application version. Update the existing managed instance group with the new instance template. Delete the instances in the managed instance group to allow the managed instance group to recreate the instance using the new instance template.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 58,
@@ -519,7 +519,7 @@ export const practices266 = [
         B: "B. Cloud Spanner ",
         C: "C. Cloud Firestore ",
         D: "D. Cloud Datastore",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 59,
@@ -528,7 +528,7 @@ export const practices266 = [
         B: "B. Assign the engineering team only the Billing Account User role on the billing account. ",
         C: "C. Assign the finance team the Billing Account User role on the billing account and the Project Billing Manager role on the organization. ",
         D: "D. Assign the engineering team the Billing Account User role on the billing account and the Project Billing Manager role on the organization.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 60,
@@ -537,7 +537,7 @@ export const practices266 = [
         B: "B. 1. In GKE, create a Service of type NodePort that uses the application's Pods as backend. 2. Create a Compute Engine instance called proxy with 2 network interfaces, one in each VP",
         C: "C. 3. Use iptables on this instance to forward traffic from gce-network to the GKE nodes. 4. Configure the Compute Engine instance to use the address of proxy in gce-network as endpoint. C. 1. In GKE, create a Service of type LoadBalancer that uses the application's Pods as backend. 2. Add an annotation to this service: cloud.google.com/load-balancer-type: Internal 3. Peer the two VPCs together. 4. Configure the Compute Engine instance to use the address of the load balancer that has been created. ",
         D: "D. 1. In GKE, create a Service of type LoadBalancer that uses the application's Pods as backend. 2. Add a Cloud Armor Security Policy to the load balancer that whitelists the internal IPs of the MIG's instances. 3. Configure the Compute Engine instance to use the address of the load balancer that has been created.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 61,
@@ -546,7 +546,7 @@ export const practices266 = [
         B: "B. Create an export to the sink that saves logs from Cloud Audit to a Coldline Storage bucket. ",
         C: "C. Write a custom script that uses logging API to copy the logs from Stackdriver logs to BigQuery. ",
         D: "D. Export these logs to Cloud Pub/Sub and write a Cloud Dataflow pipeline to store logs to Cloud SQL.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 62,
@@ -555,7 +555,7 @@ export const practices266 = [
         B: "B. Run it on Compute Engine, and choose a custom instance type with 6 vCPUs and 32 GB of memory. ",
         C: "C. Package it in a container image, and run it on Kubernetes Engine, using n1-standard-32 instances as nodes. ",
         D: "D. Run it on Compute Engine, choose the instance type n1-standard-1, and add an SSD persistent disk of 32 GB.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 63,
@@ -564,7 +564,7 @@ export const practices266 = [
         B: "B. 1. Using Cloud VPN, create a VPN tunnel to a Virtual Private Cloud (VPC) in Google Cloud. 2. In this VPC, create a Compute Engine instance and install the Squid proxy server on this instance. 3. Configure your servers to use that instance as a proxy to access Cloud Storage. ",
         C: "C. 1. Use Migrate for Compute Engine (formerly known as Velostrata) to migrate those servers to Compute Engine. 2. Create an internal load balancer (ILB) that uses storage.googleapis.com as backend. 3. Configure your new instances to use this ILB as proxy. ",
         D: "D. 1. Using Cloud VPN or Interconnect, create a tunnel to a VPC in Google Cloud. 2. Use Cloud Router to create a custom route advertisement for 199.36.153.4/30. Announce that network to your on-premises network through the VPN tunnel. 3. In your on-premises network, configure your DNS server to resolve *.googleapis.com as a CNAME to restricted.googleapis.com.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 64,
@@ -573,7 +573,7 @@ export const practices266 = [
         B: "B. 1. Grant the Pub/Sub Subscriber role to the service account used by Cloud Run. 2. Create a Cloud Pub/Sub subscription for that topic. 3. Make your application pull messages from that subscription. ",
         C: "C. 1. Create a service account. 2. Give the Cloud Run Invoker role to that service account for your Cloud Run application. 3. Create a Cloud Pub/Sub subscription that uses that service account and uses your Cloud Run application as the push endpoint. ",
         D: "D. 1. Deploy your application on Cloud Run on GKE with the connectivity set to Internal. 2. Create a Cloud Pub/Sub subscription for that topic. 3. In the same Google Kubernetes Engine cluster as your application, deploy a container that takes the messages and sends them to your application.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 65,
@@ -582,7 +582,7 @@ export const practices266 = [
         B: "B. Deploy the container on Cloud Run on GKE. ",
         C: "C. Deploy the container on App Engine Flexible. ",
         D: "D. Deploy the container on GKE with cluster autoscaling and horizontal pod autoscaling enabled.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 66,
@@ -591,7 +591,7 @@ export const practices266 = [
         B: "B. Configure the acquired company's billing account and your company's billing account to export the billing data into the same BigQuery dataset. ",
         C: "C. Migrate the acquired company's projects into your company's GCP organization. Link the migrated projects to your company's billing account. ",
         D: "D. Create a new GCP organization and a new billing account. Migrate the acquired company's projects and your company's projects into the new GCP organization and link the projects to the new billing account.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 67,
@@ -600,7 +600,7 @@ export const practices266 = [
         B: "B. Add the support team group to the roles/spanner.databaseUser role. ",
         C: "C. Add the support team group to the roles/spanner.databaseReader role. ",
         D: "D. Add the support team group to the roles/stackdriver.accounts.viewer role.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 68,
@@ -609,7 +609,7 @@ export const practices266 = [
         B: "B. 1. In Cloud Logging, create a logs export with a Cloud Pub/Sub topic called logs as a sink. 2. Create a Cloud Function that is triggered by messages in the logs topic. 3. Configure that Cloud Function to drop logs that are not from Compute Engine and to insert Compute Engine logs in the platform-logs dataset. ",
         C: "C. 1. In Cloud Logging, create a filter to view only Compute Engine logs. 2. Click Create Export. 3. Choose BigQuery as Sink Service, and the platform-logs dataset as Sink Destination. ",
         D: "D. 1. Create a Cloud Function that has the BigQuery User role on the platform-logs dataset. 2. Configure this Cloud Function to create a BigQuery Job that executes this query: INSERT INTO dataset.platform-logs (timestamp, log) SELECT timestamp, log FROM compute.logs WHERE timestamp > DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY) 3. Use Cloud Scheduler to trigger this Cloud Function once a day.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 69,
@@ -618,7 +618,7 @@ export const practices266 = [
         B: "B. Use the Deployment Manager Runtime Configurator to create a new Config resource that contains the DaemonSet definition. ",
         C: "C. With Deployment Manager, create a Compute Engine instance with a startup script that uses kubectl to create the DaemonSet. ",
         D: "D. In the cluster's definition in Deployment Manager, add a metadata that has kube-system as key and the DaemonSet manifest as value.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 70,
@@ -627,7 +627,7 @@ export const practices266 = [
         B: "B. Use gcloud to create a key file for the service account that has appropriate permissions. ",
         C: "C. Set up direct interconnect between your data center and Google Cloud Platform to enable authentication for your on-premises applications. ",
         D: "D. Go to the IAM & admin console, grant a user account permissions similar to the service account permissions, and use this user account for authentication from your data center.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 71,
@@ -636,7 +636,7 @@ export const practices266 = [
         B: "B. When you create the GKE cluster, choose the Allow full access to all Cloud APIs option under 'Access scopes'. ",
         C: "C. Create a service account, and give it access to Cloud Storage. Create a P12 key for this service account and use it as an imagePullSecrets in Kubernetes. ",
         D: "D. Configure the ACLs on each image in Cloud Storage to give read-only access to the default Compute Engine service account.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 72,
@@ -645,7 +645,7 @@ export const practices266 = [
         B: "B. Review details of the myapp-deployment Deployment object and check for error messages. ",
         C: "C. Review details of myapp-deployment-58ddbbb995-lp86m Pod and check for warning messages. ",
         D: "D. View logs of the container in myapp-deployment-58ddbbb995-lp86m pod and check for warning messages.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 73,
@@ -654,7 +654,7 @@ export const practices266 = [
         B: "B. After the VM has been created, use gcloud compute reset-windows-password to retrieve the login credentials for the VM. ",
         C: "C. When creating the VM, add metadata to the instance using 'windows-password' as the key and a password as the value. ",
         D: "D. After the VM has been created, download the JSON private key for the default Compute Engine service account. Use the credentials in the JSON file to log in to the VM.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 74,
@@ -663,7 +663,7 @@ export const practices266 = [
         B: "B. Set metadata to enable-oslogin=true for the instance. Set the service account to no service account for that instance. Direct them to use the Cloud Shell to ssh to that instance. ",
         C: "C. Enable block project wide keys for the instance. Generate an SSH key for each user in the dev1 group. Distribute the keys to dev1 users and direct them to use their third-party tools to connect. ",
         D: "D. Enable block project wide keys for the instance. Generate an SSH key and associate the key with that instance. Distribute the key to dev1 users and direct them to use their third-party tools to connect.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 75,
@@ -672,7 +672,7 @@ export const practices266 = [
         B: "B. Run gcloud init to set the current project to my-project, and then run gcloud services list --available. ",
         C: "C. Run gcloud info to view the account value, and then run gcloud services list --account . ",
         D: "D. Run gcloud projects describe  to verify the project value, and then run gcloud services list --available.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 76,
@@ -681,7 +681,7 @@ export const practices266 = [
         B: "B. Deploy a new version of your application in a Compute Engine instance instead of App Engine and then use GCP Console to split traffic. ",
         C: "C. Deploy a new version as a separate app in App Engine. Then configure App Engine using GCP Console to split traffic between the two apps. ",
         D: "D. Deploy a new version of your application in App Engine. Then go to App Engine settings in GCP Console and split traffic between the current version and newly deployed versions accordingly.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 77,
@@ -690,7 +690,7 @@ export const practices266 = [
         B: "B. Fill in local SSD . Add estimated cost for cluster management. ",
         C: "C. Select Add GPUs. Fill in persistent disk storage and snapshot storage. ",
         D: "D. Select Add GPUs. Add estimated cost for cluster management.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 78,
@@ -699,7 +699,7 @@ export const practices266 = [
         B: "B. Create a Kubernetes Service of type ClusterIP for your application. Configure the public DNS name of your application using the IP of this Service. ",
         C: "C. Create a Kubernetes Service of type NodePort to expose the application on port 443 of each node of the Kubernetes cluster. Configure the public DNS name of your application with the IP of every node of the cluster to achieve load-balancing. ",
         D: "D. Create a HAProxy pod in the cluster to load-balance the traffic to all the pods of the application. Forward the public traffic to HAProxy with an iptable rule. Configure the DNS name of your application using the public IP of the node HAProxy is running on.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 79,
@@ -708,7 +708,7 @@ export const practices266 = [
         B: "B. Verify that both projects are in a GCP Organization. Share the VPC from one project and request that the Compute Engine instances in the other project use this shared VPC . ",
         C: "C. Verify that you are the Project Administrator of both projects. Create two new VPCs and add all instances. ",
         D: "D. Verify that you are the Project Administrator of both projects. Create a new VPC and add all instances.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 80,
@@ -717,7 +717,7 @@ export const practices266 = [
         B: "B. Create a custom role with view-only service permissions. Add the user's account to the custom role. ",
         C: "C. Select the built-in IAM project Viewer role. Add the user's account to this role. ",
         D: "D. Select the built-in IAM service Viewer role. Add the user's account to this role.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 81,
@@ -726,7 +726,7 @@ export const practices266 = [
         B: "B. Recreate all the nodes of the GKE cluster to enable GPUs on all of them. ",
         C: "C. Create your own Kubernetes cluster on top of Compute Engine with nodes that have GPUs. Dedicate this cluster to your ML team. ",
         D: "D. Add a new, GPU-enabled, node pool to the GKE cluster. Ask your ML team to add the cloud.google.com/gke -accelerator: nvidia-tesla-p100 nodeSelector to their pod specification.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 82,
@@ -735,7 +735,7 @@ export const practices266 = [
         B: "B. Delete the subnet, and recreate it using a wider range of IP addresses. ",
         C: "C. Create a new project. Use Shared VPC to share the current network with the new project. ",
         D: "D. Create a new subnet with the same starting IP but a wider range to overwrite the current subnet.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 83,
@@ -744,7 +744,7 @@ export const practices266 = [
         B: "B. Grant them the required IAM roles using their G Suite email address. ",
         C: "C. Create a CSV sheet with all users' email addresses. Use the gcloud command line tool to convert them into Google Cloud Platform accounts. ",
         D: "D. In the G Suite console, add the users to a special group called cloud-console-users@yourdomain.com. Rely on the default behavior of the Cloud Platform to grant users access if they are members of this group.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 84,
@@ -753,7 +753,7 @@ export const practices266 = [
         B: "B. Create two configurations using gsutil config. Write a script that sets configurations as active, individually. For each configuration, use gsutil compute instances list to get a list of compute resources. ",
         C: "C. Go to Cloud Shell and export this information to Cloud Storage on a daily basis. ",
         D: "D. Go to GCP Console and export this information to Cloud SQL on a daily basis.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 85,
@@ -762,7 +762,7 @@ export const practices266 = [
         B: "B. Create a BigQuery table and load data in BigQuery. Run a SQL query on this table and drop this table after you complete your request. ",
         C: "C. Create external tables in BigQuery that point to Cloud Storage buckets and run a SQL query on these external tables to complete your request. ",
         D: "D. Create a Hadoop cluster and copy the AVRO file to NDFS by compressing it. Load the file in a hive table and provide access to your analysts so that they can run SQL queries.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 86,
@@ -771,7 +771,7 @@ export const practices266 = [
         B: "B. Filter the Activity log to view the Configuration category. Filter the Resource type to Google Project. ",
         C: "C. Filter the Activity log to view the Data Access category. Filter the Resource type to Service Account. ",
         D: "D. Filter the Activity log to view the Data Access category. Filter the Resource type to Google Project.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 87,
@@ -780,7 +780,7 @@ export const practices266 = [
         B: "B. Create a route called allow-udp-636 and set the next hop to be the VM instance running the LDAP server. ",
         C: "C. Add a network tag of your choice to the instance. Create a firewall rule to allow ingress on UDP port 636 for that network tag. ",
         D: "D. Add a network tag of your choice to the instance running the LDAP server. Create a firewall rule to allow egress on UDP port 636 for that network tag.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 88,
@@ -789,7 +789,7 @@ export const practices266 = [
         B: "B. Verify that you are the project billing administrator. Select the associated billing account and create a budget and a custom alert. ",
         C: "C. Verify that you are the project administrator. Select the associated billing account and create a budget for the appropriate project. ",
         D: "D. Verify that you are project administrator. Select the associated billing account and create a budget and a custom alert.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 89,
@@ -798,7 +798,7 @@ export const practices266 = [
         B: "B. When creating the VM, use Intel Skylake as the CPU platform. ",
         C: "C. Create the VM using Compute Engine default settings. Use gcloud to modify the running instance to have 96 vCPUs. ",
         D: "D. Start the VM using Compute Engine default settings, and adjust as you go based on Rightsizing Recommendations.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 90,
@@ -807,7 +807,7 @@ export const practices266 = [
         B: "B. Add a bucket lifecycle rule that archives data with newer versions after 30 days to Nearline Storage. ",
         C: "C. Add a bucket lifecycle rule that archives data from regional storage after 30 days to Coldline Storage. ",
         D: "D. Add a bucket lifecycle rule that archives data from regional storage after 30 days to Nearline Storage.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 91,
@@ -816,7 +816,7 @@ export const practices266 = [
         B: "B. In Google Cloud, configure the VPC for VPC Network Peering. ",
         C: "C. Create bastion hosts both in your on-premises environment and on Google Cloud. Configure both as proxy servers using their public IP addresses. ",
         D: "D. Set up Cloud VPN between the infrastructure on-premises and Google Cloud.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 92,
@@ -825,7 +825,7 @@ export const practices266 = [
         B: "B. Select Multi-Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Nearline Storage. ",
         C: "C. Select Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Nearline Storage. ",
         D: "D. Select Regional Storage. Add a bucket lifecycle rule that archives data after 30 days to Coldline Storage.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 93,
@@ -834,7 +834,7 @@ export const practices266 = [
         B: "B. Write a shell script that uses the bq command line tool to loop through all the projects in your organization. ",
         C: "C. Write a script that loops through all the projects in your organization and runs a query on INFORMATION_SCHEMA.COLUMNS view to find the employee_ssn column. ",
         D: "D. Write a Cloud Dataflow job that loops through all the projects in your organization and runs a query on INFORMATION_SCHEMA.COLUMNS view to find employee_ssn column.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 94,
@@ -843,7 +843,7 @@ export const practices266 = [
         B: "B. Too many Pods are already running in the cluster, and there are not enough resources left to schedule the pending Pod. ",
         C: "C. The node pool is configured with a service account that does not have permission to pull the container image used by the pending Pod. ",
         D: "D. The pending Pod was originally scheduled on a node that has been preempted between the creation of the Deployment and your verification of the Pods' status. It is currently being rescheduled on a new node.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 95,
@@ -852,7 +852,7 @@ export const practices266 = [
         B: "B. Open the IAM & admin console to review IAM policies for Cloud Spanner roles. ",
         C: "C. Go to the Stackdriver Monitoring console and review information for Cloud Spanner. ",
         D: "D. Go to the Stackdriver Logging console, review admin activity logs, and filter them for Cloud Spanner IAM roles.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 96,
@@ -861,7 +861,7 @@ export const practices266 = [
         B: "B. Apply a user- or project-level custom query quota for BigQuery data warehouse. E. Change your BigQuery query model from on-demand to flat rate. Apply the appropriate number of slots to each Project. ",
         C: "C. Create separate copies of your BigQuery data warehouse for each business unit. ",
         D: "D. Split your BigQuery data warehouse into multiple data warehouses for each business unit.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 97,
@@ -870,7 +870,7 @@ export const practices266 = [
         B: "B. Use the Container Analysis API to detect vulnerabilities in the containers used by your customers' Pods. ",
         C: "C. Create a GKE node pool with a sandbox type configured to gvisor. Add the parameter runtimeClassName: gvisor to the specification of your customers' Pods. ",
         D: "D. Use the cos_containerd image for your GKE nodes. Add a nodeSelector with the value cloud.google.com/gke-os-distribution: cos_containerd to the specification of your customers' Pods",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 98,
@@ -879,7 +879,7 @@ export const practices266 = [
         B: "B. Add a secondary index on the person_id column. ",
         C: "C. Change the primary key to not have monotonically increasing values. ",
         D: "D. Create a secondary index using the following Data Definition Language (DDL):",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 99,
@@ -888,7 +888,7 @@ export const practices266 = [
         B: "B. Add the group for the finance team to roles/billing admin role. ",
         C: "C. Add the group for the finance team to roles/billing viewer role. ",
         D: "D. Add the group for the finance team to roles/billing project/Manager role.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 100,
@@ -897,7 +897,7 @@ export const practices266 = [
         B: "B. Add your SREs to roles/accessapproval.approver role. ",
         C: "C. Add your SREs to a group and then add this group to roles/iam.roleAdmin.role. ",
         D: "D. Add your SREs to a group and then add this group to roles/accessapproval.approver role.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 101,
@@ -906,7 +906,7 @@ export const practices266 = [
         B: "B. Use a Preemptible VM. ",
         C: "C. Use a sole-tenant node. ",
         D: "D. Enable deletion protection on the instance.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 102,
@@ -915,7 +915,7 @@ export const practices266 = [
         B: "B. Add users to roles/bigquery dataEditor role only, instead of roles/bigquery dataOwner. ",
         C: "C. Create a custom role by removing delete permissions, and add users to that role only. ",
         D: "D. Create a custom role by removing delete permissions. Add users to the group, and then add the group to the custom role.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 103,
@@ -924,7 +924,7 @@ export const practices266 = [
         B: "B. Create a Cloud Datastore index using gcloud datastore indexes create. ",
         C: "C. Install the google-cloud-sdk-datastore-emulator component using the apt get install command. ",
         D: "D. Install the cloud-datastore-emulator component using the gcloud components install command.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 104,
@@ -933,7 +933,7 @@ export const practices266 = [
         B: "B. Add the users to roles/iam.roleViewer role. ",
         C: "C. Add the users to a group, and add this group to roles/browser. ",
         D: "D. Add the users to a group, and add this group to roles/iam.roleViewer role.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 105,
@@ -942,7 +942,7 @@ export const practices266 = [
         B: "B. In Cloud Identity, set up SSO with a third-party identity provider with Google as a service provider. ",
         C: "C. Obtain OAuth 2.0 credentials, configure the user consent screen, and set up OAuth 2.0 for Mobile & Desktop Apps. ",
         D: "D. Obtain OAuth 2.0 credentials, configure the user consent screen, and set up OAuth 2.0 for Web Server Applications.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 106,
@@ -951,7 +951,7 @@ export const practices266 = [
         B: "B. Add the user to roles/iam.securityAdmin role. ",
         C: "C. Add the user to roles/iam.serviceAccountUser role. ",
         D: "D. Add the user to roles/iam.serviceAccountAdmin role.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 107,
@@ -960,7 +960,7 @@ export const practices266 = [
         B: "B. Nearline Storage ",
         C: "C. Regional Storage ",
         D: "D. Multi-Regional Storage",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 108,
@@ -969,7 +969,7 @@ export const practices266 = [
         B: "B. Create a VerticalPodAutscaler for those workloads. ",
         C: "C. Create a node pool with preemptible VMs and GPUs attached to those VMs. ",
         D: "D. Create a node pool of instances with GPUs, and enable autoscaling on this node pool with a minimum size of 1.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 109,
@@ -978,7 +978,7 @@ export const practices266 = [
         B: "B. Use the cloud Identity APIs and write a script to synchronize users to Cloud Identity. ",
         C: "C. Export users from Active Directory as a CSV and import them to Cloud Identity via the Admin Console. ",
         D: "D. Ask each employee to create a Google account using self signup. Require that each employee use their company email address and password.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 110,
@@ -987,7 +987,7 @@ export const practices266 = [
         B: "B. Create a new production subnet in the existing VPC and a new production Cloud SQL instance in your existing project, and deploy your application using those resources. ",
         C: "C. Create a new project, modify your existing VPC to be a Shared VPC, share that VPC with your new project, and replicate the setup you have in the development environment in that new project in the Shared VPC. ",
         D: "D. Ask the security team to grant you the Project Editor role in an existing production project used by another division of your company. Once they grant you that role, replicate the setup you have in the development environment in that project.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 111,
@@ -996,7 +996,7 @@ export const practices266 = [
         B: "B. Ask the auditor for their Google account, and give them the Security Reviewer role on the project. ",
         C: "C. Create a temporary account for the auditor in Cloud Identity, and give that account the Viewer role on the project. ",
         D: "D. Create a temporary account for the auditor in Cloud Identity, and give that account the Security Reviewer role on the project.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 112,
@@ -1005,7 +1005,7 @@ export const practices266 = [
         B: "B. Create a snapshot schedule for the disk using the desired interval. ",
         C: "C. Create a cron job to create a new disk from the disk using gcloud. ",
         D: "D. Create a Cloud Task to create an image and export it to Cloud Storage.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 113,
@@ -1014,7 +1014,7 @@ export const practices266 = [
         B: "B. Assign the auditor the IAM role roles/logging.privateLogViewer. Direct the auditor to also review the logs for changes to Cloud IAM policy. ",
         C: "C. Assign the auditor's IAM user to a custom role that has logging.privateLogEntries.list permission. Perform the export of logs to Cloud Storage. ",
         D: "D. Assign the auditor's IAM user to a custom role that has logging.privateLogEntries.list permission. Direct the auditor to also review the logs for changes to Cloud IAM policy.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 114,
@@ -1023,7 +1023,7 @@ export const practices266 = [
         B: "B. Create a Stackdriver Logging Export with a Sink destination to a BigQuery dataset. Configure the table expiration to 60 days. ",
         C: "C. Create a Stackdriver Logging Export with a Sink destination to Cloud Storage. Create a lifecycle rule to delete objects after 60 days. ",
         D: "D. Configure a Cloud Scheduler job to read from Stackdriver and store the logs in BigQuery. Configure the table expiration to 60 days.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 115,
@@ -1032,7 +1032,7 @@ export const practices266 = [
         B: "B. 1. Verify that you are assigned the Project Owners IAM role for this project. 2. Switch to the project in the GCP console, locate the resources and delete them. ",
         C: "C. 1. Verify that you are assigned the Organizational Administrator IAM role for this project. 2. Locate the project in the GCP console, enter the project ID and then click Shut down. ",
         D: "D. 1. Verify that you are assigned the Organizational Administrators IAM role for this project. 2. Switch to the project in the GCP console, locate the resources and delete them.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 116,
@@ -1041,7 +1041,7 @@ export const practices266 = [
         B: "B. Give project owner role to crm-databases-proj and the web-applications project. ",
         C: "C. Give project owner role to crm-databases-proj and bigquery.dataViewer role to web-applications. ",
         D: "D. Give bigquery.dataViewer role to crm-databases-proj and appropriate roles to web-applications.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 117,
@@ -1050,7 +1050,7 @@ export const practices266 = [
         B: "B. View System Event Logs in Cloud Logging. Search for the service account associated with the user. ",
         C: "C. View Data Access audit logs in Cloud Logging. Search for the user's email as the principal. ",
         D: "D. View the Admin Activity log in Cloud Logging. Search for the service account associated with the user.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 118,
@@ -1059,7 +1059,7 @@ export const practices266 = [
         B: "B. Use permissions in your role that use the 'supported' support level for role permissions. Set the role stage to BETA while testing the role permissions. ",
         C: "C. Use permissions in your role that use the 'testing' support level for role permissions. Set the role stage to ALPHA while testing the role permissions. ",
         D: "D. Use permissions in your role that use the 'testing' support level for role permissions. Set the role stage to BETA while testing the role permissions.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 119,
@@ -1068,7 +1068,7 @@ export const practices266 = [
         B: "B. Upload the data to Cloud Storage using the gsutil command line tool. ",
         C: "C. Upload the data into Cloud SQL using the import function in the console. ",
         D: "D. Upload the data into Cloud Spanner using the import function in the console.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 120,
@@ -1077,7 +1077,7 @@ export const practices266 = [
         B: "B. 1. Create a configuration for each project you need to manage. 2. Use gcloud init to update the configuration values when you need to work with a non-default project ",
         C: "C. 1. Use the default configuration for one project you need to manage. 2. Activate the appropriate configuration when you work with each of your assigned Google Cloud projects. ",
         D: "D. 1. Use the default configuration for one project you need to manage. 2. Use gcloud init to update the configuration values when you need to work with a non-default project.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 121,
@@ -1086,7 +1086,7 @@ export const practices266 = [
         B: "B. Create an instance template that contains valid syntax that will be used by the instance group. Verify that the instance name and persistent disk name values are not the same in the template. ",
         C: "C. Verify that the instance template being used by the instance group contains valid syntax. Delete any persistent disks with the same name as instance names. Set the disks.autoDelete property to true in the instance template. ",
         D: "D. Delete the current instance template and replace it with a new instance template. Verify that the instance name and persistent disk name values are not the same in the template. Set the disks.autoDelete property to true in the instance template.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 122,
@@ -1095,7 +1095,7 @@ export const practices266 = [
         B: "B. 1. Advise your developers to go to Cloud Marketplace. 2. Ask the developers to launch a Cassandra image for their development work. ",
         C: "C. 1. Build a Cassandra Compute Engine instance and take a snapshot of it. 2. Use the snapshot to create instances for your developers. ",
         D: "D. 1. Build a Cassandra Compute Engine instance and take a snapshot of it. 2. Upload the snapshot to Cloud Storage and make it accessible to your developers. 3. Build instructions to create a Compute Engine instance from the snapshot so that developers can do it themselves.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 123,
@@ -1104,7 +1104,7 @@ export const practices266 = [
         B: "B. 1. Create a Cloud Monitoring Workspace and associate your Google Cloud Platform (GCP) project with it. 2. Create a Cloud Monitoring Alerting Policy that uses the threshold as a trigger condition. 3. Configure your email address in the notification channel. ",
         C: "C. 1. Create a Cloud Monitoring Workspace and associate your GCP project with it. 2. Write a script that monitors the CPU usage and sends it as a custom metric to Cloud Monitoring. 3. Create an uptime check for the instance in Cloud Monitoring. ",
         D: "D. 1. In Cloud Logging, create a logs-based metric to extract the CPU usage by using this regular expression: CPU Usage: ([0-9] {1,3})% 2. In Cloud Monitoring, create an Alerting Policy based on this metric. 3. Configure your email address in the notification channel.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 124,
@@ -1113,7 +1113,7 @@ export const practices266 = [
         B: "B. Create a Cloud Monitoring alerting policy to send an alert to oncall SRE emails when Cloud Spanner CPU exceeds the threshold. SREs would scale resources up or down accordingly. ",
         C: "C. Create a Cloud Monitoring alerting policy to send an alert to Google Cloud Support email when Cloud Spanner CPU exceeds your threshold. Google support would scale resources up or down accordingly. ",
         D: "D. Create a Cloud Monitoring alerting policy to send an alert to webhook when Cloud Spanner CPU is over or under your threshold. Create a Cloud Function that listens to HTTP and resizes Spanner resources accordingly.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 125,
@@ -1122,7 +1122,7 @@ export const practices266 = [
         B: "B. Set up a budget alert on the billing account with an amount of 100 dollars, a threshold of 100%, and notification type of email. ",
         C: "C. Export the billing data to BigQuery. Create a Cloud Function that uses BigQuery to sum the egress network costs of the exported billing data for the Apache web server for the current month and sends an email if it is over 100 dollars. Schedule the Cloud Function using Cloud Scheduler to run hourly. ",
         D: "D. Use the Cloud Logging Agent to export the Apache web server logs to Cloud Logging. Create a Cloud Function that uses BigQuery to parse the HTTP response log data in Cloud Logging for the current month and sends an email if the size of all HTTP responses, multiplied by current Google Cloud egress prices, totals over 100 dollars. Schedule the Cloud Function using Cloud Scheduler to run hourly.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 126,
@@ -1131,7 +1131,7 @@ export const practices266 = [
         B: "B. For each Google Cloud product in the solution, review the pricing details on the products pricing page. Create a Google Sheet that summarizes the expected monthly costs for each product. ",
         C: "C. Provision the solution on Google Cloud. Leave the solution provisioned for 1 week. Navigate to the Billing Report page in the Cloud Console. Multiply the 1 week cost to determine the monthly costs. ",
         D: "D. Provision the solution on Google Cloud. Leave the solution provisioned for 1 week. Use Cloud Monitoring to determine the provisioned and used resource amounts. Multiply the 1 week cost to determine the monthly costs.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 127,
@@ -1140,7 +1140,7 @@ export const practices266 = [
         B: "B. Network Load Balancer ",
         C: "C. SSL Proxy Load Balancer ",
         D: "D. Internal TCP/UDP Load Balancer. Add a firewall rule allowing ingress traffic from 0.0.0.0/0 on the target instances.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 128,
@@ -1149,7 +1149,7 @@ export const practices266 = [
         B: "B. Increase the allocated CPU to the instance. ",
         C: "C. Migrate to use a Local SSD on the instance. ",
         D: "D. Migrate to use a Regional SSD on the instance.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 129,
@@ -1158,7 +1158,7 @@ export const practices266 = [
         B: "B. Create a new Secondary IP Range in the VPC and configure the VMs to use that range. ",
         C: "C. Create a new VPC network for the VMs. Enable VPC Peering between the VMs' VPC network and the Dataproc cluster VPC network. ",
         D: "D. Create a new VPC network for the VMs with a subnet of 172.32.0.0/16. Enable VPC network Peering between the Dataproc VPC network and the VMs VPC network. Configure a custom Route exchange.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 130,
@@ -1167,7 +1167,7 @@ export const practices266 = [
         B: "B. Ask the other team to grant your default App Engine Service account the role of BigQuery Data Viewer. ",
         C: "C. In Cloud IAM of your project, ensure that the default App Engine service account has the role of BigQuery Data Viewer. ",
         D: "D. In Cloud IAM of your project, grant a newly created service account from the other team the role of BigQuery Job User in your project.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 131,
@@ -1176,7 +1176,7 @@ export const practices266 = [
         B: "B. Create a Compute Engine snapshot of your base VM. Create your instances from that snapshot. ",
         C: "C. Create a custom Compute Engine image from a snapshot. Create your images from that image. ",
         D: "D. Create a custom Compute Engine image from a snapshot. Create your instances from that image.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 132,
@@ -1185,7 +1185,7 @@ export const practices266 = [
         B: "B. Connect to the instance's serial console and read the application logs. ",
         C: "C. Configure a Health Check on the instance and set a Low Healthy Threshold value. ",
         D: "D. Install and configure the Cloud Logging Agent and view the logs from Cloud Logging.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 133,
@@ -1194,7 +1194,7 @@ export const practices266 = [
         B: "B. Grant the VM Service Account the role Storage Object Creator on corp-aggregate-reports-storage. ",
         C: "C. Create a Shared VPC network between both projects. Grant the VM Service Account the role Storage Object Creator on corp-iot-insights. ",
         D: "D. Make corp-aggregate-reports-storage public and create a folder with a pseudo-randomized suffix name. Share the folder with the IoT team.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 134,
@@ -1203,7 +1203,7 @@ export const practices266 = [
         B: "B. Create a service account with appropriate access for Google services, and configure the application to use this account. ",
         C: "C. Store credentials for service accounts with appropriate access for Google services in a config file, and deploy this config file with your application. ",
         D: "D. Store credentials for your user account with appropriate access for Google services in a config file, and deploy this config file with your application.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 135,
@@ -1212,7 +1212,7 @@ export const practices266 = [
         B: "B. Enable the Compute Engine API in the Cloud Console, use the Cloud SDK to create the instance, and then use the --project flag to specify a new project. ",
         C: "C. Using the Cloud SDK, create the new instance, and use the --project flag to specify the new project. Answer yes when prompted by Cloud SDK to enable the Compute Engine API. ",
         D: "D. Enable the Compute Engine API in the Cloud Console. Go to the Compute Engine section of the Console to create a new instance, and look for the Create In A New Project option in the creation form.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 136,
@@ -1221,7 +1221,7 @@ export const practices266 = [
         B: "B. Migrate the workload to a Google Kubernetes Engine cluster with Preemptible nodes. ",
         C: "C. Migrate the workload to a Compute Engine VM. Start and stop the instance as needed. ",
         D: "D. Create an Instance Template with Preemptible VMs On. Create a Managed Instance Group from the template and adjust Target CPU Utilization. Migrate the workload.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 137,
@@ -1230,7 +1230,7 @@ export const practices266 = [
         B: "B. Create a new Compute Engine instance. Run the Jenkins executable. ",
         C: "C. Create a new Kubernetes Engine cluster. Create a deployment for the Jenkins image. ",
         D: "D. Create an instance template with the Jenkins executable. Create a managed instance group with this template.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 138,
@@ -1239,7 +1239,7 @@ export const practices266 = [
         B: "B. In the Settings page for Compute Engine under Default location, set the zone to europe west1-d. ",
         C: "C. In the CLI installation directory, create a file called default.conf containing zone=europe west1d.",
         D: "D. Create a Metadata entry on the Compute Engine page with key compute/zone and value europe west1d.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 139,
@@ -1248,7 +1248,7 @@ export const practices266 = [
         B: "B. Create a file in Cloud Filestore per device and append new data to that file. ",
         C: "C. Ingest the data into Datastore. Store data in an entity group based on the device. ",
         D: "D. Ingest the data into Cloud Bigtable. Create a row key based on the event timestamp.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 140,
@@ -1257,7 +1257,7 @@ export const practices266 = [
         B: "B. Enable API and then give the metrics.reader role to projects A, B, and C . ",
         C: "C. Enable API and then use default dashboards to view all projects in sequence. ",
         D: "D. Enable API, create a workspace under project A, and then add projects B and C.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 141,
@@ -1266,7 +1266,7 @@ export const practices266 = [
         B: "B. Visit the Cost Table page to get a CSV export and visualize it using Data Studio. ",
         C: "C. Fill all resources in the Pricing Calculator to get an estimate of the monthly cost. ",
         D: "D. Use the Reports view in the Cloud Billing Console to view the desired cost information.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 142,
@@ -1275,7 +1275,7 @@ export const practices266 = [
         B: "B. Create the instance with Private Google Access enabled. ",
         C: "C. Create a deny-all egress firewall rule on the VPC network. ",
         D: "D. Create a route on the VPC to route all traffic to the instance over the VPN tunnel.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 143,
@@ -1284,7 +1284,7 @@ export const practices266 = [
         B: "B. Use Deployment Manager templates to describe the proposed changes and store them in Cloud Source Repositories. ",
         C: "C. Apply the changes in a development environment, run gcloud compute instances list, and then save the output in a shared Storage bucket. ",
         D: "D. Apply the changes in a development environment, run gcloud compute instances list, and then save the output in Cloud Source Repositories.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 144,
@@ -1293,7 +1293,7 @@ export const practices266 = [
         B: "B. 1. In the Cloud Console, go to the Compute Engine Disks page and select your instance's disk. 2. In the Snapshot Schedule section, select Create Schedule and configure the following parameters: - Schedule frequency: Daily - Start time: 1:00 AM 2:00 \" AM - Autodelete snapshots after: 30 days ",
         C: "C. 1. Create a Cloud Function that creates a snapshot of your instance's disk. 2. Create a Cloud Function that deletes snapshots that are older than 30 days. 3. Use Cloud Scheduler to trigger both Cloud Functions daily at 1: 00 AM. ",
         D: "D. 1. Create a bash script in the instance that copies the content of the disk to Cloud Storage. 2. Create a bash script in the instance that deletes data older than 30 days in the backup Cloud Storage bucket. 3. Configure the instance's crontab to execute these scripts daily at 1: 00 AM.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 145,
@@ -1302,7 +1302,7 @@ export const practices266 = [
         B: "B. Create a new Node Pool and specify machine type n2 highmem16. Deploy the new pods. ",
         C: "C. Create a new cluster with n2 highmem16  nodes. Redeploy the pods and delete the old cluster. ",
         D: "D. Create a new cluster with both n1 standard2 and n2 highmem16 nodes. Redeploy the pods and delete the old cluster.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 146,
@@ -1311,7 +1311,7 @@ export const practices266 = [
         B: "B. Create a dataflow job that copies data from Cloud Bigtable and Cloud Spanner for specific users. ",
         C: "C. Create a Cloud Dataproc cluster that runs a Spark job to extract data from Cloud Bigtable and Cloud Storage for specific users. ",
         D: "D. Create two separate BigQuery external tables on Cloud Storage and Cloud Bigtable. Use the BigQuery console to join these tables through user fields, and apply appropriate filters.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 147,
@@ -1320,7 +1320,7 @@ export const practices266 = [
         B: "B.  Create a Managed Instance Group and specify us central1 a as the zone.  Configure the Health Check with a short Health Interval. ",
         C: "C.  Create an HTTP(S) Load Balancer.  Create one or more global forwarding rules to direct traffic to your VMs. ",
         D: "D.  Perform regular backups of your application.  Create a Cloud Monitoring Alert and be notified if your application becomes unavailable.  Restore from backups when notified.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 148,
@@ -1329,7 +1329,7 @@ export const practices266 = [
         B: "B. Navigate to Identity-Aware Proxy and check the permissions for these resources. ",
         C: "C. Enable Audit Logs on the IAM & admin page for all resources, and validate the results. ",
         D: "D. Use the command gcloud projects get iam policy to view the current role assignments.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 149,
@@ -1338,7 +1338,7 @@ export const practices266 = [
         B: "B. Add an alias IP range to the subnet used by the GKE clusters. ",
         C: "C. Create a new VPC, and set up VPC peering with the existing VPC. ",
         D: "D. Expand the CIDR range of the relevant subnet for the cluster.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 150,
@@ -1347,7 +1347,7 @@ export const practices266 = [
         B: "B. Run a test using simulated maintenance events. If the test is successful, use N1 Standard VMs when running future jobs. ",
         C: "C. Run a test using a managed instance group. If the test is successful, use N1 Standard VMs in the managed instance group when running future jobs. ",
         D: "D. Run a test using N1 standard VMs instead of N2. If the test is successful, use N1 Standard VMs when running future jobs.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 151,
@@ -1356,7 +1356,7 @@ export const practices266 = [
         B: "B. Set up a high-priority (1000) rule that pairs both ingress and egress ports. ",
         C: "C. Set up a high-priority (1000) rule that blocks all egress and a low-priority (65534) rule that allows only the appropriate ports. ",
         D: "D. Set up a high-priority (1000) rule to allow the appropriate ports.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 152,
@@ -1365,7 +1365,7 @@ export const practices266 = [
         B: "B. Tag all the instances with the same network tag. Create a firewall rule in the VPC to grant TCP access on port 22 for traffic from the operations partner to instances with the network tag. ",
         C: "C. Set up Cloud VPN between your Google Cloud VPC and the internal network of the operations partner. ",
         D: "D. Ask the operations partner to generate SSH key pairs, and add the public keys to the VM instances.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 153,
@@ -1374,7 +1374,7 @@ export const practices266 = [
         B: "B. Use Cloud Functions and configure the bucket as a trigger resource. ",
         C: "C. Use Google Kubernetes Engine and configure a CronJob to trigger the application using Pub/Sub. ",
         D: "D. Use Dataflow as a batch job, and configure the bucket as a data source.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 154,
@@ -1383,7 +1383,7 @@ export const practices266 = [
         B: "B. Set up a policy that uses Standard storage for 30 days and then moves to Archive storage for three years. ",
         C: "C. Set up a policy that uses Nearline storage for 30 days, then moves the Coldline for one year, and then moves to Archive storage for two years. ",
         D: "D. Set up a policy that uses Standard storage for 30 days, then moves to Coldline for one year, and then moves to Archive storage for two years.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 155,
@@ -1392,7 +1392,7 @@ export const practices266 = [
         B: "B. Scan the bucket using the Data Loss Prevention API. ",
         C: "C. Allow only a single Service Account access to read the data. ",
         D: "D. Enable Data Access audit logs for the Cloud Storage API.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 156,
@@ -1401,7 +1401,7 @@ export const practices266 = [
         B: "B. Create a separate billing account per sandbox project and enable BigQuery billing exports. Create a Data Studio dashboard to plot the spending per billing account. ",
         C: "C. Create a budget per project and configure budget alerts on all of these budgets. ",
         D: "D. Create a single billing account for all sandbox projects and enable BigQuery billing exports. Create a Data Studio dashboard to plot the spending per project.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 157,
@@ -1410,7 +1410,7 @@ export const practices266 = [
         B: "B. Enable delete protection on the instance. ",
         C: "C. Disable Automatic restart on the instance. ",
         D: "D. Enable Preemptibility on the instance.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 158,
@@ -1419,7 +1419,7 @@ export const practices266 = [
         B: "B. Grant all members of the DevOps team the role of Project Editor on the production project. ",
         C: "C. Create a custom role that combines the required permissions. Grant the DevOps team the custom role on the production project. ",
         D: "D. Create a custom role that combines the required permissions. Grant the DevOps team the custom role on the organization level.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 159,
@@ -1428,7 +1428,7 @@ export const practices266 = [
         B: "B. Set up an SFTP server for your application, and create a separate user for each supplier. ",
         C: "C. Build a Cloud function that triggers a timer of 45 days to delete objects that have expired. ",
         D: "D. Develop a script that loops through all Cloud Storage buckets and deletes any buckets that are older than 45 days",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 160,
@@ -1437,7 +1437,7 @@ export const practices266 = [
         B: "B. Use curl in a terminal to send a REST request to the relevant Google API for each individual resource. ",
         C: "C. Use the Cloud Console interface to provision and manage all related resources. ",
         D: "D. Create a bash script that contains all requirement steps as gcloud commands.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 161,
@@ -1446,7 +1446,7 @@ export const practices266 = [
         B: "B. Review the IAM permissions for any role that allows for data access. ",
         C: "C. Review the Identity-Aware Proxy settings for each resource. ",
         D: "D. Create a Data Loss Prevention job.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 162,
@@ -1455,7 +1455,7 @@ export const practices266 = [
         B: "B. Create a private zone on Cloud DNS, and configure the applications with the DNS name. ",
         C: "C. Configure the IP of the database as custom metadata for each instance, and query the metadata server. ",
         D: "D. Query the Compute Engine internal DNS from the applications to retrieve the IP of the database.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 163,
@@ -1464,7 +1464,7 @@ export const practices266 = [
         B: "B. Deploy the container on Cloud Run (fully managed), and set the minimum number of instances to zero. ",
         C: "C. Deploy the container on App Engine flexible environment with autoscaling, and set the value min_instances to zero in the app.yaml. ",
         D: "D. Deploy the container on App Engine flexible environment with manual scaling, and set the value instances to zero in the app.yaml.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 164,
@@ -1473,7 +1473,7 @@ export const practices266 = [
         B: "B. Set up BigQuery billing export and grant your financial department IAM access to query the data. ",
         C: "C. Create a ticket with Google Billing Support to ask them to send the invoice to your company. ",
         D: "D. Change the billing account of your projects to the billing account of your company.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 165,
@@ -1482,7 +1482,7 @@ export const practices266 = [
         B: "B. Create a Service Account in your own project, and ask the partner to grant this Service Account access to BigQuery in their project. ",
         C: "C. Ask the partner to create a Service Account in their project, and have them give the Service Account access to BigQuery in their project. ",
         D: "D. Ask the partner to create a Service Account in their project, and grant their Service Account access to the BigQuery dataset in your project.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 166,
@@ -1491,7 +1491,7 @@ export const practices266 = [
         B: "B. Create a new revision with the new version of the application. Split traffic between this version and the version that is currently running. ",
         C: "C. Create a new service with the new version of the application. Add an HTTP Load Balancer in front of both services. ",
         D: "D. Create a new revision with the new version of the application. Add an HTTP Load Balancer in front of both revisions.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 167,
@@ -1500,7 +1500,7 @@ export const practices266 = [
         B: "B. Configure an Internal UDP load balancer in front of the application servers. ",
         C: "C. Configure an External HTTP(s) load balancer in front of the application servers. ",
         D: "D. Configure an External Network load balancer in front of the application servers.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 168,
@@ -1509,7 +1509,7 @@ export const practices266 = [
         B: "B. Deploy a Dataflow job from the batch template, Datastore to Cloud Storage. Schedule the batch job on the desired interval. ",
         C: "C. Create a script that uses the gsutil command line interface to synchronize the on-premises storage with Cloud Storage. Schedule the script as a cron job. ",
         D: "D. In the Cloud Console, go to Cloud Storage. Upload the relevant images to the appropriate bucket.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 169,
@@ -1518,7 +1518,7 @@ export const practices266 = [
         B: "B. Assign the appropriate permissions, and then create a Data Studio report on Admin Activity Audit Logs. ",
         C: "C. Assign the appropriate permissions, and then use Cloud Monitoring to review metrics. ",
         D: "D. Use the export logs API to provide the Admin Activity Audit Logs in the format they want.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 170,
@@ -1527,7 +1527,7 @@ export const practices266 = [
         B: "B. Use the command gcloud auth activate-service-account and point it to the private key. ",
         C: "C. Place the private key file in the installation directory of the Cloud SDK and rename it to credentials.json. ",
         D: "D. Place the private key file in your home directory and rename it to GOOGLE_APPLICATION_CREDENTIALS.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 171,
@@ -1536,7 +1536,7 @@ export const practices266 = [
         B: "B. Save the automatic first-of-the-month backup for three years. Store the backup file in an Archive class Cloud Storage bucket. ",
         C: "C. Set up an on-demand backup for the first of the month. Write the backup to an Archive class Cloud Storage bucket. ",
         D: "D. Convert the automatic first-of-the-month backup to an export file. Write the export file to a Coldline class Cloud Storage bucket.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 172,
@@ -1545,7 +1545,7 @@ export const practices266 = [
         B: "B. Create a sink to BigQuery to export all the logs. Create a Data Studio dashboard on the exported logs. ",
         C: "C. Create a custom log-based metric for the specific error to be used in an Alerting Policy. ",
         D: "D. Grant Project Owner access to the Service Account",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 173,
@@ -1554,7 +1554,7 @@ export const practices266 = [
         B: "B. Use Cloud SQL for data storage. ",
         C: "C. Use Cloud Spanner for data storage. ",
         D: "D. Use Firestore for data storage.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 174,
@@ -1563,7 +1563,7 @@ export const practices266 = [
         B: "B. Provision Compute Engine instances with GPUs attached. ",
         C: "C. Provision Compute Engine instances with local SSDs attached. ",
         D: "D. Provision Compute Engine instances with M1 machine type.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 175,
@@ -1572,7 +1572,7 @@ export const practices266 = [
         B: "B. Create and deploy a Docker Compose File. ",
         C: "C. Create and deploy a Job per microservice. ",
         D: "D. Create and deploy a Deployment per microservice.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 176,
@@ -1581,7 +1581,7 @@ export const practices266 = [
         B: "B. When creating the instances, assign the name of each Service Account as instance metadata. ",
         C: "C. After starting the instances, use gcloud compute instances update to specify a Service Account for each instance. ",
         D: "D. After starting the instances, use gcloud compute instances update to assign the name of the relevant Service Account as instance metadata.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 177,
@@ -1590,7 +1590,7 @@ export const practices266 = [
         B: "B. Deploy MongoDB Atlas from the Google Cloud Marketplace. ",
         C: "C. Download a MongoDB installation package, and run it on Compute Engine instances. ",
         D: "D. Download a MongoDB installation package, and run it on a Managed Instance Group",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 178,
@@ -1599,7 +1599,7 @@ export const practices266 = [
         B: "B. Create a Service Account for the BI team and distribute a new private key to each member of the BI team. ",
         C: "C. Use Cloud Scheduler to schedule a batch Dataflow job to copy the data from BigQuery to the BI team's internal data warehouse. ",
         D: "D. Assign the IAM role of BigQuery User to a Google Group that contains the members of the BI team.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 179,
@@ -1608,7 +1608,7 @@ export const practices266 = [
         B: "B. 1. Create a single VPC with a subnet for the DMZ and a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public egress traffic for the DMZ. ",
         C: "C. 1. Create a VPC with a subnet for the DMZ and another VPC with a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public ingress traffic for the DMZ. ",
         D: "D. 1. Create a VPC with a subnet for the DMZ and another VPC with a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public egress traffic for the DMZ.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 180,
@@ -1617,7 +1617,7 @@ export const practices266 = [
         B: "B. Configure your Cloud Spanner instance to be multi-regional. ",
         C: "C. Create a new VPC network with subnetworks in all desired regions. ",
         D: "D. Grant yourself the IAM role of Cloud Spanner Admin.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 181,
@@ -1626,7 +1626,7 @@ export const practices266 = [
         B: "B. Create a VPC network in the project. ",
         C: "C. Enable the compute googleapis.com API. ",
         D: "D. Grant yourself the IAM role of Computer Admin.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 182,
@@ -1635,7 +1635,7 @@ export const practices266 = [
         B: "B. Deploy the application on GKE, and add a VerticalPodAutoscaler to the deployment. ",
         C: "C. Create a GKE cluster with autoscaling enabled on the node pool. Set a minimum and maximum for the size of the node pool. ",
         D: "D. Create a separate node pool for each application, and deploy each application to its dedicated node pool.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 183,
@@ -1644,7 +1644,7 @@ export const practices266 = [
         B: "B. Create the instance with the default Compute Engine service account. Add metadata to the objects on Cloud Storage that matches the metadata on the new instance. ",
         C: "C. Create a new service account and assign this service account to the new instance. Grant the service account permissions on Cloud Storage. ",
         D: "D. Create a new service account and assign this service account to the new instance. Add metadata to the objects on Cloud Storage that matches the metadata on the new instance.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 184,
@@ -1653,7 +1653,7 @@ export const practices266 = [
         B: "B. Configure regional storage for the region closest to the users. Configure a Standard storage class. ",
         C: "C. Configure dual-regional storage for the dual region closest to the users. Configure a Nearline storage class. ",
         D: "D. Configure dual-regional storage for the dual region closest to the users. Configure a Standard storage class.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 185,
@@ -1662,7 +1662,7 @@ export const practices266 = [
         B: "B. Deploy the application on App Engine. For each update, create a new service. Configure traffic splitting to send a small percentage of traffic to the new service. ",
         C: "C. Deploy the application on Kubernetes Engine. For a new release, update the deployment to use the new version. ",
         D: "D. Deploy the application on Kubernetes Engine. For a new release, create a new deployment for the new version. Update the service to use the new deployment.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 186,
@@ -1671,7 +1671,7 @@ export const practices266 = [
         B: "B. Invite the user to use an email alias to resolve the conflict. ",
         C: "C. Tell the user that they must delete their existing account. ",
         D: "D. Tell the user to remove all personal email from the existing account.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 187,
@@ -1680,7 +1680,7 @@ export const practices266 = [
         B: "B. Create an alert in Cloud Monitoring to alert when the percentage of high priority CPU utilization reaches 45%. Use database query statistics to identify queries that result in high CPU usage, and then rewrite those queries to optimize their resource usage. ",
         C: "C. Create an alert in Cloud Monitoring to alert when the percentage of high priority CPU utilization reaches 65%. If you exceed this threshold, add nodes to your instance. ",
         D: "D. Create an alert in Cloud Monitoring to alert when the percentage of high priority CPU utilization reaches 65%. Use database query statistics to identify queries that result in high CPU usage, and then rewrite those queries to optimize their resource usage.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 188,
@@ -1689,7 +1689,7 @@ export const practices266 = [
         B: "B. Cloud SQL ",
         C: "C. Cloud Spanner ",
         D: "D. Cloud Datastore",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 189,
@@ -1698,7 +1698,7 @@ export const practices266 = [
         B: "B. Use the command gcloud container clusters update dev. ",
         C: "C. Create a file called gke.default in the ~/.gcloud folder that contains the cluster name. ",
         D: "D. Create a file called defaults.json in the ~/.gcloud folder that contains the cluster name.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 190,
@@ -1707,7 +1707,7 @@ export const practices266 = [
         B: "B. Create a Project Lien on acme-data-digest and then grant the Project Editor role to the Marketing team. ",
         C: "C. Create another project with the ID acme-marketing-data-digest for the Marketing team and deploy the resources there. ",
         D: "D. Create a new project named Marketing Data Digest and use the ID acme-data-digest. Grant the Project Editor role to the Marketing team.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 191,
@@ -1716,7 +1716,7 @@ export const practices266 = [
         B: "B. Configure Cloud Identity-Aware Proxy for SSH and TCP resources ",
         C: "C. Create an SSH keypair and store the public key as a project-wide SSH Key. ",
         D: "D. Create an SSH keypair and store the private key as a project-wide SSH Key.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 192,
@@ -1725,7 +1725,7 @@ export const practices266 = [
         B: "B. Upload the image to Cloud Storage and create a Kubernetes Deployment referencing the image. ",
         C: "C. Upload the image to Container Registry and create a Kubernetes Service referencing the image. ",
         D: "D. Upload the image to Container Registry and create a Kubernetes Deployment referencing the image.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 193,
@@ -1734,7 +1734,7 @@ export const practices266 = [
         B: "B. Use the BigQuery interface to review the nightly job and look for any errors. ",
         C: "C. Use Cloud Debugger to find out why the data was not refreshed correctly. ",
         D: "D. In Cloud Logging, create a filter for your Data Studio report.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 194,
@@ -1743,7 +1743,7 @@ export const practices266 = [
         B: "B. Use folders to group resources that share common IAM policies. ",
         C: "C. Set up a proper billing account structure to group IAM policies. ",
         D: "D. Set up a proper project naming structure to group IAM policies.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 195,
@@ -1752,7 +1752,7 @@ export const practices266 = [
         B: "B. Use an automatic mode VPC network, configure static routes, and use active/active routing. ",
         C: "C. Use a custom mode VPC network, use Cloud Router border gateway protocol (BGP) routes, and use active/passive routing. ",
         D: "D. Use an automatic mode VPC network, use Cloud Router border gateway protocol (BGP) routes, and configure policy-based routing",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 196,
@@ -1761,7 +1761,7 @@ export const practices266 = [
         B: "B. Create a node pool with compute-optimized machine type nodes for the image rendering microservice. Use the node pool with generalpurpose machine type nodes for the other microservices. ",
         C: "C. Use the node pool with general-purpose machine type nodes for the image rendering microservice. Create a node pool with computeoptimized machine type nodes for the other microservices. ",
         D: "D. Configure the required amount of CPU and memory in the resource requests specification of the image rendering microservice deployment. Keep the resource requests for the other microservices at the default.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 197,
@@ -1770,7 +1770,7 @@ export const practices266 = [
         B: "B. 1. Verify that you are assigned the Billing Administrator IAM role for your organization's Google Cloud account. 2. Create a new Google Cloud Project for the Marketing department. 3. Set the default key-value project labels to department:marketing for all services in this project. ",
         C: "C. 1. Verify that you are assigned the Organization Administrator IAM role for your organization's Google Cloud account. 2. Create a new Google Cloud Project for the Marketing department. 3. Link the new project to a Marketing Billing Account. ",
         D: "D. 1. Verify that you are assigned the Organization Administrator IAM role for your organization's Google Cloud account. 2. Create a new Google Cloud Project for the Marketing department. 3. Set the default key-value project labels to department:marketing for all services in this project.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 198,
@@ -1779,7 +1779,7 @@ export const practices266 = [
         B: "B. Expose the application by using a TCP Proxy Load Balancer. ",
         C: "C. Expose the application by using an SSL Proxy Load Balancer. ",
         D: "D. Expose the application by using an internal TCP Network Load Balancer.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 199,
@@ -1788,7 +1788,7 @@ export const practices266 = [
         B: "B. Use Cloud Spanner to store user data mapped to the game statistics. ",
         C: "C. Use BigQuery to store game statistics with a Redis on Memorystore instance in the front to provide global consistency. ",
         D: "D. Store game statistics in a Bigtable database partitioned by username.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 200,
@@ -1797,7 +1797,7 @@ export const practices266 = [
         B: "B. Firestore ",
         C: "C. Cloud Spanner ",
         D: "D. Bigtable",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 201,
@@ -1806,7 +1806,7 @@ export const practices266 = [
         B: "B. In the Google Cloud console, visualize the costs related to the projects in the Cost breakdown section. ",
         C: "C. In the Google Cloud console, use the export functionality of the Cost table. Create a Looker Studio dashboard on top of the CSV export. ",
         D: "D. Configure Cloud Billing data export to BigQuery for the billing account. Create a Looker Studio dashboard on top of the BigQuery export.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 202,
@@ -1815,7 +1815,7 @@ export const practices266 = [
         B: "B. Add storage.googleapis.com to the list of restricted services in a VPC Service Controls perimeter and add your project to the list of protected projects. ",
         C: "C. Enable Private Google Access on the subnet within the custom VPC. ",
         D: "D. Deploy a Cloud NAT instance and route the traffic to the dedicated IP address of the Cloud Storage bucket.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 203,
@@ -1824,7 +1824,7 @@ export const practices266 = [
         B: "B. Ensure that you have an Organization Administrator Identity and Access Management (IAM) role assigned to you in both organizations. Navigate to the Resource Manager in the startup\u2019s Google Cloud organization, and drag the project to your company's organization. ",
         C: "C. Create a Private Catalog for the Google Cloud Marketplace, and upload the resources of the startup's production project to the Catalog. Share the Catalog with your organization, and deploy the resources in your company\u2019s project. ",
         D: "D. Create an infrastructure-as-code template for all resources in the project by using Terraform, and deploy that template to a new project in your organization. Delete the project from the startup\u2019s Google Cloud organization.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 204,
@@ -1833,7 +1833,7 @@ export const practices266 = [
         B: "B. Create an organization to contain all the dev projects. Create an Identity and Access Management (IAM) policy to limit the resources in US regions. ",
         C: "C. Create an Identity and Access Management (IAM) policy to restrict the resources locations in the US. Apply the policy to all dev projects. ",
         D: "D. Create an Identity and Access Management (IAM) policy to restrict the resources locations in all dev projects. Apply the policy to all dev roles.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 205,
@@ -1842,7 +1842,7 @@ export const practices266 = [
         B: "B. Create one CNAME record to point mydomain.com to the load balancer, and create two AAAA records to point WWW and HOME to mydomain.com respectively. ",
         C: "C. Create one A record to point mydomain.com to the load balancer, and create two CNAME records to point WWW and HOME to mydomain.com respectively. ",
         D: "D. Create one A record to point mydomain.com to the load balancer, and create two NS records to point WWW and HOME to mydomain.com respectively.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 206,
@@ -1851,7 +1851,7 @@ export const practices266 = [
         B: "B. \u2022 Create network tags app-server and db-server. \u2022 Add the app-server tag to the application servers and the db-server tag to the database servers. \u2022 Create an egress firewall rule to allow network traffic from source network tag app-server to target network tag db-server. ",
         C: "C. \u2022 Create a service account sa-app and a network tag db-server. \u2022 Associate the service account sa-app with the application servers and the network tag db-server with the database servers. \u2022 Create an ingress firewall rule to allow network traffic from source VPC IP addresses and target the subnet-a IP addresses. ",
         D: "D. \u2022 Create a network tag app-server and service account sa-db. \u2022 Add the tag to the application servers and associate the service account with the database servers. \u2022 Create an egress firewall rule to allow network traffic from source network tag app-server to target service account sa-db.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 207,
@@ -1860,7 +1860,7 @@ export const practices266 = [
         B: "B. Search for the CMS solution in Google Cloud Marketplace. Deploy the solution directly from Cloud Marketplace. ",
         C: "C. Search for the CMS solution in Google Cloud Marketplace. Use Terraform and the Cloud Marketplace ID to deploy the solution with the appropriate parameters. ",
         D: "D. Use the installation guide of the CMS provider. Perform the installation through your configuration management system.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 208,
@@ -1869,7 +1869,7 @@ export const practices266 = [
         B: "B. Grant all engineers permission to create their own billing accounts for each new project. ",
         C: "C. Apply for monthly invoiced billing, and have a single invoice for the project paid by the finance team. ",
         D: "D. Create a billing account, associate it with a monthly purchase order (PO), and send the PO to Google Cloud.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 209,
@@ -1878,7 +1878,7 @@ export const practices266 = [
         B: "B. Open the Google Cloud console, and check the organization policies. ",
         C: "C. Open the Google Cloud console, and run a query to determine which resources this service account can access. ",
         D: "D. Open the Google Cloud console, and run a query of the audit logs to find permission denied errors for this service account.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 210,
@@ -1887,7 +1887,7 @@ export const practices266 = [
         B: "B. Use the gcloud compute ssh command with the --tunnel-through-iap flag. Allow ingress traffic from the IP range 35.235.240.0/20 on port 22. ",
         C: "C. Use a third party tool to provide remote access to the instances. ",
         D: "D. Create a bastion host with public internet access. Create the SSH tunnel to the instance through the bastion host.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 211,
@@ -1896,7 +1896,7 @@ export const practices266 = [
         B: "B. Create a custom role based on the Compute Image User role. Add the compute.disks.list to the includedPermissions field. Grant the custom role to the user at the project level. ",
         C: "C. Create a custom role based on the Compute Storage Admin role. Exclude unnecessary permissions from the custom role. Grant the custom role to the user at the project level. ",
         D: "D. Grant the Compute Storage Admin role at the project level.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 212,
@@ -1905,7 +1905,7 @@ export const practices266 = [
         B: "B. Set the concurrency number to 1 for your Cloud Run service. ",
         C: "C. Set the maximum number of instances for your Cloud Run service to 100. ",
         D: "D. Update your web application to use the protocol HTTP/2 instead of HTTP/1.1.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 213,
@@ -1914,7 +1914,7 @@ export const practices266 = [
         B: "B. Stream data to Pub/Sub, and use Storage Transfer Service to send data to BigQuery. ",
         C: "C. Stream data to Dataflow, and use Dataprep by Trifacta to send data to Bigtable. ",
         D: "D. Stream data to Dataflow, and use Storage Transfer Service to send data to BigQuery.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 214,
@@ -1923,7 +1923,7 @@ export const practices266 = [
         B: "B. Change the subnet IP range from 10.0.0.0/20 to 10.0.0.0/18. ",
         C: "C. Change the subnet IP range from 10.0.0.0/20 to 10.0.0.0/22. ",
         D: "D. Convert the subnet IP range from IPv4 to IPv6.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 215,
@@ -1932,7 +1932,7 @@ export const practices266 = [
         B: "B. \u2022 Add all developers to a Google group in Google Groups for Workspace. \u2022 Assign the predefined role of Compute Admin to the Google group at the Google Cloud organization level. ",
         C: "C. \u2022 Add all developers to a Google group in Cloud Identity. \u2022 Assign predefined roles for Compute Engine, Cloud Functions, and Cloud SQL permissions to the Google group for each project in the Google Cloud organization. ",
         D: "D. \u2022 Add all developers to a Google group in Cloud Identity. \u2022 Create a custom role with Compute Engine, Cloud Functions, and Cloud SQL permissions at the Google Cloud organization level. \u2022 Assign the custom role to the Google group.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 216,
@@ -1941,7 +1941,7 @@ export const practices266 = [
         B: "B. Create a script that uses the gcloud storage command to synchronize the on-premises storage with Cloud Storage, Schedule the script as a cron job. ",
         C: "C. Create a Pub/Sub topic, and create a Cloud Function connected to the topic that writes data to Cloud Storage. Create an application that sends all medical images to the Pub/Sub topic. ",
         D: "D. In the Google Cloud console, go to Cloud Storage. Upload the relevant images to the appropriate bucket.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 217,
@@ -1950,7 +1950,7 @@ export const practices266 = [
         B: "B. BigQuery ",
         C: "C. Cloud SQL ",
         D: "D. Firestore",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 218,
@@ -1959,7 +1959,7 @@ export const practices266 = [
         B: "B. Migrate the workload to a Compute Engine VM. Start and stop the instance as needed. ",
         C: "C. Migrate the workload to a Google Kubernetes Engine cluster with Spot nodes. ",
         D: "D. Migrate the workload to a Compute Engine Spot VM.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 219,
@@ -1968,7 +1968,7 @@ export const practices266 = [
         B: "B. Migrate from MySQL to Cloud Spanner, from Kafka to Pub/Sub, and from Cloud SQL for PostgreSQL to BigQuery. ",
         C: "C. Migrate from MySQL to Cloud Spanner, from Kafka to Memorystore, and from Cloud SQL for PostgreSQL to Cloud SQL. ",
         D: "D. Migrate from MySQL to Cloud SQL, from Kafka to Memorystore, and from Cloud SQL for PostgreSQL to Cloud SQL.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 220,
@@ -1977,7 +1977,7 @@ export const practices266 = [
         B: "B. Create a Cloud Scheduler task to regularly scan your resources and delete mismatched users. ",
         C: "C. Set an organizational policy constraint to limit identities by domain to automatically remove mismatched users. ",
         D: "D. Set an organizational policy constraint to limit identities by domain, and then retroactively remove the existing mismatched users",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 221,
@@ -1986,7 +1986,7 @@ export const practices266 = [
         B: "B. Use the gcloud compute instance-groups managed recreate-instances command to recreate the VM. ",
         C: "C. Select the MIG from the Compute Engine console and, in the menu, select Replace VMs. ",
         D: "D. Update and apply the instance template of the MIG.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 222,
@@ -1995,7 +1995,7 @@ export const practices266 = [
         B: "B. Use kubectl to delete the topic resource. ",
         C: "C. Use gcloud CLI to delete the topic. ",
         D: "D. Use gcloud CLI to update the topic label managed-by-cnrm to false",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 223,
@@ -2004,7 +2004,7 @@ export const practices266 = [
         B: "B. Organize the users in Cloud Identity into groups. Enforce multi-factor authentication in Cloud Identity. ",
         C: "C. Turn on identity federation between Cloud Identity and Google Workspace. Enforce multi-factor authentication for domain wide delegation. ",
         D: "D. Use a third-party identity provider service through federation. Synchronize the users from Google Workplace to the third-party provider in real time.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 224,
@@ -2013,7 +2013,7 @@ export const practices266 = [
         B: "B. Deploy your solution on multiple standalone Compute Engine instances, and replace existing instances with high-CPU instances when CPU utilization on Cloud Monitoring reaches a certain threshold. ",
         C: "C. Deploy your solution to an instance group, and increase the number of available instances whenever you see high CPU utilization in Cloud Monitoring. ",
         D: "D. Deploy your solution to an instance group, and set the autoscaling based on CPU utilization.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 225,
@@ -2022,7 +2022,7 @@ export const practices266 = [
         B: "B. Create an instance template that contains valid syntax that will be used by the instance group. Verify that the instance name and persistent disk name values are not the same in the template. ",
         C: "C. Verify that the instance template being used by the instance group contains valid syntax. Delete any persistent disks with the same name as instance names. Set the disks.autoDelete property to true in the instance template. ",
         D: "D. Delete the current instance template and replace it with a new instance template. Verify that the instance name and persistent disk name values are not the same in the template. Set the disks.autoDelete property to true in the instance template.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 226,
@@ -2031,7 +2031,7 @@ export const practices266 = [
         B: "B. Upload the image to Cloud Storage and create a Kubernetes Deployment referencing the image. ",
         C: "C. Upload the image to Artifact Registry and create a Kubernetes Service referencing the image. ",
         D: "D. Upload the image to Artifact Registry and create a Kubernetes Deployment referencing the image.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 227,
@@ -2040,7 +2040,7 @@ export const practices266 = [
         B: "B. Use the open source CLI tool, Snapshot Debugger, to find out why the data was not refreshed correctly. ",
         C: "C. Review the Error Reporting page in the Google Cloud console to find any errors. ",
         D: "D. Use the BigQuery interface to review the nightly job and look for any errors.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 228,
@@ -2049,7 +2049,7 @@ export const practices266 = [
         B: "B. Run a test using simulated maintenance events. If the test is successful, use N2 Standard VMs when running future jobs. ",
         C: "C. Run a test using a managed instance group. If the test is successful, use N2 Standard VMs in the managed instance group when running future jobs. ",
         D: "D. Run a test using N1 standard VMs instead of N2. If the test is successful, use N1 Standard VMs when running future jobs.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 229,
@@ -2058,7 +2058,7 @@ export const practices266 = [
         B: "B. Use the Reports view in the Cloud Billing Console to view the desired cost information. ",
         C: "C. Visit the Cost Table page to get a CSV export and visualize it using Looker Studio. ",
         D: "D. Configure Billing Data Export to BigQuery and visualize the data in Looker Studio.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 230,
@@ -2067,7 +2067,7 @@ export const practices266 = [
         B: "B. Upload the data to Cloud Storage using the gcloud storage command. ",
         C: "C. Upload the data into Cloud SQL using the import function in the Google Cloud console. ",
         D: "D. Upload the data into Cloud Spanner using the import function in the Google Cloud console.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 231,
@@ -2076,7 +2076,7 @@ export const practices266 = [
         B: "B. Configure a health check on the instance and set a \u201cconsecutive successes\u201d Healthy threshold value of 1. ",
         C: "C. Connect to the instance\u2019s serial console and read the application logs. ",
         D: "D. Install and configure the Ops agent and view the logs from Cloud Logging.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 232,
@@ -2085,7 +2085,7 @@ export const practices266 = [
         B: "B. Use the gcloud services enable compute.googleapis.com command to enable Compute Engine and the gcloud services enable storageapi.googleapis.com command to enable the Cloud Storage APIs. ",
         C: "C. Open the Google Cloud console and enable all Google Cloud APIs from the API dashboard. ",
         D: "D. Open the Google Cloud console and run gcloud init --project in a Cloud Shell.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 233,
@@ -2094,7 +2094,7 @@ export const practices266 = [
         B: "B. Upload Docker images to Artifact Registry, and deploy the application on Google Kubernetes Engine using Standard mode. ",
         C: "C. Upload Docker images to the Cloud Storage, and deploy the application on Google Kubernetes Engine using Standard mode. ",
         D: "D. Upload Docker images to Artifact Registry, and deploy the application on Cloud Run",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 234,
@@ -2103,7 +2103,7 @@ export const practices266 = [
         B: "B. Store the application data on a zonal persistent disk. If an outage occurs, create an instance in another zone with this disk attached. ",
         C: "C. Store the application data on a regional persistent disk. Create a snapshot schedule for the disk. If an outage occurs, create a new disk from the most recent snapshot and attach it to a new VM in another zone. ",
         D: "D. Store the application data on a regional persistent disk. If an outage occurs, create an instance in another zone with this disk attached.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 235,
@@ -2112,7 +2112,7 @@ export const practices266 = [
         B: "B. Create an IAM policy and grant all compute.instanceAdmin.* permissions to the policy. Attach the policy to the DevOps group. ",
         C: "C. Create a custom role at the folder level and grant all compute.instanceAdmin.* permissions to the role. Grant the custom role to the DevOps group. ",
         D: "D. Grant the basic role roles/editor to the DevOps group.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 236,
@@ -2121,7 +2121,7 @@ export const practices266 = [
         B: "B. Use your existing continuous integration and delivery (CI/CD) pipeline. Use the generated Docker images and deploy them to Cloud Function. Use the same configuration as on-premises. ",
         C: "C. Use the existing codebase and deploy each service as a separate Cloud Function. Update the configurations and the required endpoints. ",
         D: "D. Use your existing codebase and deploy each service as a separate Cloud Run. Use the same configurations as on-premises.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 237,
@@ -2130,7 +2130,7 @@ export const practices266 = [
         B: "B. Create a node pool with compute-optimized machine type nodes for the image rendering microservice. Use the node pool with generalpurpose machine type nodes for the other microservices. ",
         C: "C. Use the node pool with general-purpose machine type nodes for the image rendering microservice. Create a node pool with computeoptimized machine type nodes for the other microservices. ",
         D: "D. Configure the required amount of CPU and memory in the resource requests specification of the image rendering microservice deployment. Keep the resource requests for the other microservices at the default.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 238,
@@ -2139,7 +2139,7 @@ export const practices266 = [
         B: "B. Create a GKE Autopilot cluster. Enroll the cluster in the stable release channel. ",
         C: "C. Create a zonal GKE standard cluster. Enroll the cluster in the stable release channel. ",
         D: "D. Create a regional GKE standard cluster. Enroll the cluster in the rapid release channel.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 239,
@@ -2148,7 +2148,7 @@ export const practices266 = [
         B: "B. Create an alert policy to send a notification when the HTTP response latency exceeds the specified threshold. ",
         C: "C. Implement an App Engine service which invokes the Cloud Monitoring API and sends a notification in case of anomalies. ",
         D: "D. Use the Cloud Monitoring dashboard to observe latency and take the necessary actions when the response latency exceeds the specified threshold.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 240,
@@ -2157,7 +2157,7 @@ export const practices266 = [
         B: "B. Create a container for the set of binaries. Deploy the container to Google Kubernetes Engine (GKE) and use the Kubernetes scheduler to start the application. ",
         C: "C. Upload the code to Cloud Functions. Use Cloud Scheduler to start the application. ",
         D: "D. Lift and shift to a VM on Compute Engine. Use an instance schedule to start and stop the instance.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 241,
@@ -2166,7 +2166,7 @@ export const practices266 = [
         B: "B. gcloud container clusters update -generate-password dev-cluster kubectl get nodes ",
         C: "C. kubectl config set-context dev-cluster kubectl cluster-info ",
         D: "D. kubectl config set-credentials dev-cluster kubectl cluster-info",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 242,
@@ -2175,7 +2175,7 @@ export const practices266 = [
         B: "B. Implement a Kubernetes CronJob to rotate all service account keys periodically. Disable attachment of service accounts to resources in all projects with an exception to pj-sa. ",
         C: "C. Enforce an org policy constraint allowing the lifetime of service account keys to be 24 hours. Enforce an org policy constraint denying service account key creation with an exception on pj-sa. ",
         D: "D. Enforce a DENY org policy constraint over the lifetime of service account keys for 24 hours. Disable attachment of service accounts to resources in all projects with an exception to pj-sa.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 243,
@@ -2184,7 +2184,7 @@ export const practices266 = [
         B: "B. Use the Google Cloud Pricing Calculator and select the Cloud Operations template to define your web application with as much detail as possible. ",
         C: "C. Implement a similar architecture on Google Cloud, and run a reasonable load test on a smaller scale. Check the billing information, and calculate the estimated costs based on the real load your system usually handles. ",
         D: "D. Use the Google Cloud Pricing Calculator to determine the cost of every Google Cloud resource you expect to use. Use similar size instances for the web server, and use your current on-premises machines as a comparison for Cloud SQL.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 244,
@@ -2193,7 +2193,7 @@ export const practices266 = [
         B: "B. \u2022 Navigate to the Audit Logs page in the Google Cloud console, and enable Admin Write logs for the Bigtable instance. \u2022 Create a Cloud Functions instance to export logs from Cloud Logging to your SIEM. ",
         C: "C. \u2022 Navigate to the Audit Logs page in the Google Cloud console, and enable Data Read, Data Write and Admin Read logs for the Bigtable instance. \u2022 Create a Pub/Sub topic as a Cloud Logging sink destination, and add your SIEM as a subscriber to the topic. ",
         D: "D. \u2022 Install the Ops Agent on the Bigtable instance during configuration. \u2022 Create a service account with read permissions for the Bigtable instance. \u2022 Create a custom Dataflow job with this service account to export logs to the company\u2019s SIEM system.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 245,
@@ -2202,7 +2202,7 @@ export const practices266 = [
         B: "B. Deploy a public autopilot cluster. ",
         C: "C. Deploy a standard public cluster and enable shielded nodes. ",
         D: "D. Deploy a standard private cluster and enable shielded nodes.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 246,
@@ -2211,7 +2211,7 @@ export const practices266 = [
         B: "B. Migrate the web application to App Engine and the backend API to Cloud Run. Use Cloud Tasks to run your background job on Cloud Run. ",
         C: "C. Run the web application on a Cloud Storage bucket and the backend API on Cloud Run. Use Cloud Tasks to run your background job on Cloud Run. ",
         D: "D. Run the web application on a Cloud Storage bucket and the backend API on Cloud Run. Use Cloud Tasks to run your background job on Compute Engine.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 247,
@@ -2220,7 +2220,7 @@ export const practices266 = [
         B: "B. \u2022 Add a step for human approval to the CI/CD pipeline before the execution of the infrastructure provisioning. \u2022 Use the human approvals IAM account for the provisioning. ",
         C: "C. \u2022 Attach a single service account to the compute instances. \u2022 Add all required Identity and Access Management (IAM) permissions to this service account to create, update, or delete resources. ",
         D: "D. \u2022 Create multiple service accounts, one for each pipeline with the appropriate minimal Identity and Access Management (IAM) permissions. \u2022 Use a secret manager service to store the key files of the service accounts. \u2022 Allow the CI/CD pipeline to request the appropriate secrets during the execution of the pipeline.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 248,
@@ -2229,7 +2229,7 @@ export const practices266 = [
         B: "B. Create a cron job in Cloud Scheduler to call a Cloud Functions instance every day to delete files older than 30 days. ",
         C: "C. Create a retention policy on the storage bucket of 30 days, and lock the bucket by using a retention policy lock. ",
         D: "D. Enable object versioning on the storage bucket and add lifecycle rules to expire non-current versions after 30 days.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 249,
@@ -2238,7 +2238,7 @@ export const practices266 = [
         B: "B. Configure the Horizontal Pod Autoscaler for availability, and configure the Vertical Pod Autoscaler recommendations for suggestions. ",
         C: "C. Configure the Vertical Pod Autoscaler recommendations for availability, and configure the Cluster autoscaler for suggestions. ",
         D: "D. Configure the Vertical Pod Autoscaler recommendations for availability, and configure the Horizontal Pod Autoscaler for suggestions.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 250,
@@ -2247,7 +2247,7 @@ export const practices266 = [
         B: "B. Enable retention policies on the bucket, use lifecycle rules to change the storage classes of the objects, set the number of versions, and delete old files. ",
         C: "C. Enable object versioning on the bucket, and use Cloud Scheduler to invoke a Cloud Functions instance to move or delete your documents based on their metadata. ",
         D: "D. Enable object versioning on the bucket, use lifecycle conditions to change the storage class of the objects, set the number of versions, and delete old files.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 251,
@@ -2256,7 +2256,7 @@ export const practices266 = [
         B: "B. Encode username and password in sha256 encoding, and save in to a text file. Use filename as a value in the gcloud config set core/custom_ca_certs_file command. ",
         C: "C. Provide values for CLOUDSDK_PROXY_USERNAME and CLOUDSDK_PROXY_PASSWORD in the gcloud CLI tool configuration file. ",
         D: "D. Set the CLOUDSDK_PROXY_USERNAME and CLOUDSDK_PROXY_PASSWORD properties by using environment variables in your command line tool.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 252,
@@ -2265,7 +2265,7 @@ export const practices266 = [
         B: "B. Create a cluster with a single node-pool by using Spot VMs. Label the critical Deployments as spot_false. ",
         C: "C. Create a cluster with both a Spot VM node pool and a node pool by using standard VMs. Deploy the critical deployments on the Spot VM node pool and the fault-tolerant deployments on the node pool by using standard VMs. ",
         D: "D. Create a cluster with both a Spot VM node pool and a nods pool by using standard VMs. Deploy the critical deployments on the node pool by using standard VMs and the fault-tolerant deployments on the Spot VM node pool.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 253,
@@ -2274,7 +2274,7 @@ export const practices266 = [
         B: "B. Deploy the application to Google Kubernetes Engine. Use Anthos Service Mash for traffic splitting. ",
         C: "C. Deploy the application to Cloud Functions. Specify the version number in the functions name. ",
         D: "D. Deploy the application to App Engine. For each new version, create a new service.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 254,
@@ -2283,7 +2283,7 @@ export const practices266 = [
         B: "B. \u2022 Ensure that the Ops Agent is installed on the Compute Engine instance. \u2022 Provide the security team member roles/osconfig.inventoryViewer permission. ",
         C: "C. \u2022 Ensure that the OS Config agent is installed on the Compute Engine instance. \u2022 Provide the security team member roles/osconfig.vulnerabilityReportViewer permission. ",
         D: "D. \u2022 Ensure that the OS Config agent is installed on the Compute Engine instance. \u2022 Create a log sink to BigQuery dataset. \u2022 Provide the security team member with access to this dataset.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 255,
@@ -2292,7 +2292,7 @@ export const practices266 = [
         B: "B. Gradually roll out the new revision and split customer traffic between the revisions to allow rollback in case a problem occurs. ",
         C: "C. Send all customer traffic to the new revision, and roll back to a previous revision if you witness any problems in production. ",
         D: "D. Deploy your application to a second Cloud Run service, and ask your customers to use the second Cloud Run service.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 256,
@@ -2301,7 +2301,7 @@ export const practices266 = [
         B: "B. Instruct the external consultant to use the gcloud compute ssh command line tool by using the public IP address of the instance to access it. ",
         C: "C. Instruct the external consultant to generate an SSH key pair, and request the public key from the consultant. Add the public key to the instance yourself, and have the consultant access the instance through SSH with their private key. ",
         D: "D. Instruct the external consultant to generate an SSH key pair, and request the private key from the consultant. Add the private key to the instance yourself, and have the consultant access the instance through SSH with their public key.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 257,
@@ -2310,7 +2310,7 @@ export const practices266 = [
         B: "B. Use Cloud Logging filters to create log-based metrics for firewall and instance actions. Monitor the changes and set up reasonable alerts. ",
         C: "C. Install Kibana on a compute instance. Create a log sink to forward Cloud Audit Logs filtered for firewalls and compute instances to Pub/Sub. Target the Pub/Sub topic to push messages to the Kibana instance. Analyze the logs on Kibana in real time. ",
         D: "D. Turn on Google Cloud firewall rules logging, and set up alerts for any insert, update, or delete events.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }, {
         id: 258,
@@ -2319,7 +2319,7 @@ export const practices266 = [
         B: 'B. Grant "project owner" role to crm-databases and the web-applications project. ',
         C: 'C. Grant "project owner" role to crm-databases and roles/bigquery.dataViewer role to web-applications. ',
         D: "D. Grant roles/bigquery.dataViewer role to crm-databases and appropriate roles to web-applications.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 259,
@@ -2328,7 +2328,7 @@ export const practices266 = [
         B: "B. Create a new Secondary IP Range in the VPC and configure the VMs to use that range. ",
         C: "C. Create a new VPC network for the VMs. Enable VPC Peering between the VMs'VPC network and the Dataproc cluster VPC network. ",
         D: "D. Create a new VPC network for the VMs with a subnet of 172.32.0.0/16. Enable VPC network Peering between the Dataproc VPC network and the VMs VPC network. Configure a custom Route exchange.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 260,
@@ -2337,7 +2337,7 @@ export const practices266 = [
         B: "B. Create a multi-region Firestore database with aggregation query enabled. ",
         C: "C. Create a multi-region Cloud SQL for PostgreSQL database with optimized indexes. ",
         D: "D. Create a multi-region BigQuery dataset with optimized tables",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 261,
@@ -2346,7 +2346,7 @@ export const practices266 = [
         B: "B. In the Google Cloud console for the startup company, select Create role from selection and choose source as the startup company's Google Cloud organization. ",
         C: "C. Use the gcloud iam roles copy command, and provide the Organization ID of the startup company's Google Cloud Organization as the destination. ",
         D: "D. Use the gcloud iam roles copy command, and provide the project IDs of all projects in the startup company's organization as the destination.",
-        anwser: "C",
+        answer: "C",
         explain: ""
     }, {
         id: 262,
@@ -2355,7 +2355,7 @@ export const practices266 = [
         B: "B. Run a Kubernetes job to scan the bucket regularly for incoming files, and call the Speech-to-Text API for each unprocessed file. ",
         C: "C. Run a Python script by using a Linux cron job in Compute Engine to scan the bucket regularly for incoming files, and call the Speech-to-Text API for each unprocessed file. ",
         D: "D. Create a Cloud Function triggered by Cloud Storage bucket events to submit the file URI to the Google Speech-to-Text API.",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 263,
@@ -2364,7 +2364,7 @@ export const practices266 = [
         B: "B. An external network load balancer pointing to the backend instances to distribute the load evenly. The web servers will forward the request to the Cloud Storage as needed. ",
         C: "C. An internal HTTP(S) load balancer together with Identity-Aware Proxy to allow only HTTPS traffic. ",
         D: "D. An external HTTP(S) load balancer to distribute the load and a URL map to target the requests for the static content to the Cloud Storage backend. Install the HTTPS certificates on the instance.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 264,
@@ -2373,7 +2373,7 @@ export const practices266 = [
         B: "B. Create a file in Filestore per device, and append new data to that file. ",
         C: "C. Ingest the data into Cloud SQL. Use multiple read replicas to match the throughput. ",
         D: "D. Ingest the data into Bigtable. Create a row key based on the event timestamp",
-        anwser: "D",
+        answer: "D",
         explain: ""
     }, {
         id: 265,
@@ -2382,7 +2382,7 @@ export const practices266 = [
         B: "B. Create a Google Cloud service account, and download the service account key. Place the key file in a folder on your machine where gcloud CLI can find it. ",
         C: "C. Download your Cloud Identity user account key. Place the key file in a folder on your machine where gcloud CLI can find it. ",
         D: "D. Run gcloud config set compute/zone $my_zone to set the default zone for gcloud CLI. E. Run gcloud config set project $my_project to set the default project for gcloud CLI.",
-        anwser: "A",
+        answer: "A",
         explain: ""
     }, {
         id: 266,
@@ -2391,7 +2391,7 @@ export const practices266 = [
         B: "B. Use Transfer Appliance for the videos, BigQuery Data Transfer Service for the data warehouse data, and Storage Transfer Service for the PNG files. ",
         C: "C. Use Storage Transfer Service for the video files, BigQuery Data Transfer Service for the data warehouse data, and Storage Transfer Service for the PNG files. ",
         D: "D. Use Cloud Data Fusion for the video files, Dataflow for the data warehouse data, and Storage Transfer Service for the PNG files.",
-        anwser: "B",
+        answer: "B",
         explain: ""
     }
 ]

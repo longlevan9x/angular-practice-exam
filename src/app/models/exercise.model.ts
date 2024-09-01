@@ -5,8 +5,8 @@ export interface ExerciseModel {
     B?: string
     C?: string
     D?: string
-    anwser?: string
+    answer?: string
     explain?: string
-    chooseAnwser?: string
+    chooseAnswer?: string
     histories?: any[]
 }

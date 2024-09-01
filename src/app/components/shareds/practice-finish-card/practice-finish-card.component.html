@@ -15,7 +15,7 @@
         <nz-tab [nzTitle]="totalCorrectAnswer.toString() + ' correct'">
             @for (exercise of exercises; track $index) {
 
-            @if (exercise.chooseAnwser === exercise.anwser) {
+            @if (exercise.chooseAnswer === exercise.answer) {
             <div class="mb-8">
                 <app-question-card [currentQuestionIndex]="$index+1" [exercise]="exercise" [isShowHistory]="true"
                     [totalQuestion]="exercises.length" [isShowExplain]="isShowExplain" [isShowAnswer]="true"
@@ -28,7 +28,7 @@
         <nz-tab [nzTitle]="totalWrongAnswer.toString() + ' incorrect'">
             @for (exercise of exercises; track $index) {
 
-            @if (exercise.chooseAnwser !== exercise.anwser) {
+            @if (exercise.chooseAnswer !== exercise.answer) {
             <div class="mb-8">
                 <app-question-card [currentQuestionIndex]="$index+1" [exercise]="exercise" [isShowHistory]="true"
                     [totalQuestion]="exercises.length" [isShowExplain]="isShowExplain" [isShowAnswer]="true"

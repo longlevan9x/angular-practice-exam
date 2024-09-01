@@ -15,7 +15,7 @@ export class PracticeFinishCardComponent implements OnInit {
     retestUrl: string = '';
     @Input()
     passedScrore = 85;
-    @Input() 
+    @Input()
     isShowExplain: boolean = true;
 
     totalCorrectAnswer = 0;
@@ -34,7 +34,7 @@ export class PracticeFinishCardComponent implements OnInit {
 
     ngOnInit(): void {
         this.totalQuestion = this.exercises.length;
-        this.totalCorrectAnswer = this.exercises.filter(ex => ex.chooseAnwser === ex.anwser).length;
+        this.totalCorrectAnswer = this.exercises.filter(ex => ex.chooseAnswer === ex.answer).length;
         this.totalWrongAnswer = this.totalQuestion - this.totalCorrectAnswer;
         this.scrore = (this.totalCorrectAnswer / this.totalQuestion) * 100 || 0;
         this.isPassed = this.scrore >= this.passedScrore;

@@ -9,13 +9,13 @@
                         Question {{ index+1 }}
                         <span nz-icon nzType="aim" nzTheme="outline" class="ml-1"></span>
                     </span>
-                    @if (item.chooseAnwser) {
+                    @if (item.chooseAnswer) {
                     <span class="ml-2 bg-orange-100 text-orange-800 text-xs px-1 py-0 rounded-lg">
                         Answered
                     </span>
                     }
 
-                    @if (!item.chooseAnwser) {
+                    @if (!item.chooseAnswer) {
                     <span class="ml-2 bg-neutral-100 text-neutral-800 text-xs px-1 py-0 rounded-lg">
                         Unanswered
                     </span>
