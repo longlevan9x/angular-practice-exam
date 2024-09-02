@@ -15,6 +15,7 @@ import { Practice266ExamRandomComponent } from './components/practices266/practi
 import {
     Practice266BookmarkComponent
 } from "./components/practices266/practice266-bookmark/practice266-bookmark.component";
+import { Practice266HistoryComponent } from './components/practices266/practice266-history/practice266-history.component';
 
 export const routes: Routes = [
     {
@@ -123,6 +124,13 @@ export const routes: Routes = [
                 component: Practice266BookmarkComponent,
                 data: {
                     breadcrumb: "Bookmark"
+                }
+            },
+            {
+                path: 'history',
+                component: Practice266HistoryComponent,
+                data: {
+                    breadcrumb: "History"
                 }
             }
         ]

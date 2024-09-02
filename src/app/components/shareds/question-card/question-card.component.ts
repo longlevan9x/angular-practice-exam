@@ -20,11 +20,11 @@ export class QuestionCardComponent implements OnInit {
 
     @Output() exerciseChange = new EventEmitter<ExerciseModel>();
 
-
     isBookmarked: boolean = false;
 
-    constructor(private practiceHistoryService: PracticeHistoryService) {
+    @Output() onBookmarkChange: EventEmitter<boolean> = new EventEmitter<boolean>();
 
+    constructor(private practiceHistoryService: PracticeHistoryService) {
     }
 
     ngOnInit(): void {
@@ -48,6 +48,7 @@ export class QuestionCardComponent implements OnInit {
     onBookmark(): void {
         this.practiceHistoryService.savePrac266Bookmark(this.exercise, this.isBookmarked);
         this.isBookmarked = !this.isBookmarked;
+        this.onBookmarkChange.emit(this.isBookmarked);
     }
 
     checkIsBookmarked(): boolean {

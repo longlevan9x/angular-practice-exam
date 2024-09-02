@@ -1,7 +1,7 @@
-import {Injectable} from '@angular/core';
-import {LocalStorageService} from './local-storage.service';
-import {ExerciseModel} from '../models/exercise.model';
-import {PRACTICE_HISTORY} from '../constans/practice-history';
+import { Injectable } from '@angular/core';
+import { LocalStorageService } from './local-storage.service';
+import { ExerciseModel } from '../models/exercise.model';
+import { PRACTICE_HISTORY } from '../constans/practice-history';
 
 @Injectable({
     providedIn: 'root'
@@ -11,12 +11,9 @@ export class PracticeHistoryService {
     constructor(private localStorageService: LocalStorageService) {
     }
 
-    savePractice266(exercises: ExerciseModel[]): void {
-        this.localStorageService.setItem("prac266ques", exercises);
-    }
-
     savePractice266Question(exercises: ExerciseModel[]) {
-        const prac266ques: any = this.localStorageService.getItem(PRACTICE_HISTORY.prac266ques);
+        const prac266ques: any[] = this.localStorageService.getItemArray(PRACTICE_HISTORY.prac266ques);
+
         exercises.filter(e => e.chooseAnswer).forEach((item, index) => {
             const id: any = item.id;
             let chooseAnswerHistory = {
@@ -33,9 +30,14 @@ export class PracticeHistoryService {
         this.localStorageService.setItem(PRACTICE_HISTORY.prac266ques, prac266ques);
     }
 
+    getPrac266Histories(): ExerciseModel[] {
+        return this.localStorageService.getItemArray(PRACTICE_HISTORY.prac266ques);
+    }
+
     getQuestionWithId(exerId?: number): any[] {
         const _id: any = exerId;
         const histories: any = this.localStorageService.getItem(PRACTICE_HISTORY.prac266ques) || {};
+
         return histories[_id] || [];
     }
 
@@ -45,7 +47,7 @@ export class PracticeHistoryService {
         if (isBookmarked) {
             pracBookmarks = pracBookmarks.filter(e => e.id !== exercise.id);
         } else {
-            pracBookmarks.push({id: exercise.id});
+            pracBookmarks.push({ id: exercise.id });
         }
 
         this.localStorageService.setItem(PRACTICE_HISTORY.prac266BM, pracBookmarks);

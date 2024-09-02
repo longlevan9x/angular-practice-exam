@@ -7,12 +7,10 @@ import { ExerciseModel } from '../../../../models/exercise.model';
     styleUrl: './practice266-question-list.component.scss'
 })
 export class Practice266QuestionListComponent {
-    @Input()
-    exercises: ExerciseModel[] = [];
-    @Input()
-    totalQuestion: number = 0;
-    @Input()
-    isShowExplain: boolean = false;
+    @Input() exercises: ExerciseModel[] = [];
+    @Input() totalQuestion: number = 0;
+    @Input() isShowExplain: boolean = false;
+    @Input() isShowHistory: boolean = false;
 
     isShowExercisesModal: boolean = false;
     isShowExerBtn: boolean = false;
@@ -43,5 +41,12 @@ export class Practice266QuestionListComponent {
                 element.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         }, 300);
+    }
+
+    onBookmarkChange(isBookmarked: boolean, exerId?: number) {
+        if (!isBookmarked) {
+            this.exercises = this.exercises.filter(e => e.id !== exerId);
+            this.totalQuestion -= 1;
+        }
     }
 }

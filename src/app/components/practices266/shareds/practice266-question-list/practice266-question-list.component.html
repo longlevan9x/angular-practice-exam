@@ -6,7 +6,7 @@
 @for (exercise of exercises; track $index) {
 <div class="mb-8" #questionCardRef>
     <app-question-card [exercise]="exercise" [totalQuestion]="totalQuestion" [isShowExplain]="isShowExplain"
-        [currentQuestionIndex]="$index+1"></app-question-card>
+        [currentQuestionIndex]="$index+1" (onBookmarkChange)="onBookmarkChange($event, exercise.id)" [isShowHistory]="isShowHistory"></app-question-card>
 </div>
 }
 

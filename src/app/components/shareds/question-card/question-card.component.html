@@ -8,11 +8,10 @@
         </div>
         <div class="text-gray-700">
             <span nz-icon nzType="book" [nzTheme]="isBookmarked ? 'fill' : 'outline'"
-                  [nz-tooltip]="isBookmarked ? 'Un Bookmark' : 'Bookmark'"
-                  class="cursor-pointer text-xl text-amber-700 hover:text-amber-500 mr-2" (click)="onBookmark()"></span>
-            <span nz-icon nzType="rocket" nz-tooltip="Check answer"
-                  (click)="onCheckAnswer()"
-                  class="cursor-pointer text-xl text-sky-800 hover:text-amber-800" nzTheme="outline"></span>
+                [nz-tooltip]="isBookmarked ? 'Un Bookmark' : 'Bookmark'"
+                class="cursor-pointer text-xl text-amber-700 hover:text-amber-500 mr-2" (click)="onBookmark()"></span>
+            <span nz-icon nzType="rocket" nz-tooltip="Check answer" (click)="onCheckAnswer()"
+                class="cursor-pointer text-xl text-sky-800 hover:text-amber-800" nzTheme="outline"></span>
         </div>
     </div>
 
@@ -24,69 +23,91 @@
     <div class="mb-6">
         <div class="mt-6 space-y-6">
             <div [ngTemplateOutlet]="answerTemp"
-                 [ngTemplateOutletContext]="{value: 'A', answer: exercise.A, correctAnswer: exercise.answer}"></div>
+                [ngTemplateOutletContext]="{value: 'A', answer: exercise.A, correctAnswer: exercise.answer}"></div>
             <div [ngTemplateOutlet]="answerTemp"
-                 [ngTemplateOutletContext]="{value: 'B', answer: exercise.B, correctAnswer: exercise.answer}"></div>
+                [ngTemplateOutletContext]="{value: 'B', answer: exercise.B, correctAnswer: exercise.answer}"></div>
             <div [ngTemplateOutlet]="answerTemp"
-                 [ngTemplateOutletContext]="{value: 'C', answer: exercise.C, correctAnswer: exercise.answer}"></div>
+                [ngTemplateOutletContext]="{value: 'C', answer: exercise.C, correctAnswer: exercise.answer}"></div>
             <div [ngTemplateOutlet]="answerTemp"
-                 [ngTemplateOutletContext]="{value: 'D', answer: exercise.D, correctAnswer: exercise.answer}"></div>
+                [ngTemplateOutletContext]="{value: 'D', answer: exercise.D, correctAnswer: exercise.answer}"></div>
         </div>
     </div>
 
+    <!-- No answer given -->
     @if (isResult) {
-        <!--  -->
-        @if (!exercise.chooseAnswer || exercise.chooseAnswer == '') {
-            <div class="mb-6">
-                <div class="border-l-4 px-4 py-1 mt-8 text-base border-yellow-500 bg-yellow-50">
-                    No answer given
-                </div>
-            </div>
-        }
-        <!--  -->
+    @if (!exercise.chooseAnswer || exercise.chooseAnswer == '') {
+    <div class="mb-6">
+        <div class="border-l-4 px-4 py-1 mt-8 text-base border-yellow-500 bg-yellow-50">
+            No answer given
+        </div>
+    </div>
     }
+    }
+    <!-- End No answer given -->
 
+    <!-- Explain -->
     @if (isShowExplain) {
-        <div>
-            <div class="border-l-4 rounded-l px-4 mt-6 text-lg"
-                 [class.border-pink-700]="exercise.chooseAnswer !== exercise.answer"
-                 [class.border-lime-600]="exercise.chooseAnswer === exercise.answer">
-                <p class="font-bold">Explain: </p>
-                {{ exercise.explain }}
+    <div>
+        <div class="border-l-4 rounded-l px-4 mt-6 text-lg"
+            [class.border-pink-700]="exercise.chooseAnswer !== exercise.answer"
+            [class.border-lime-600]="exercise.chooseAnswer === exercise.answer">
+            <p class="font-bold">Explain: </p>
+            {{ exercise.explain }}
+        </div>
+    </div>
+    }
+    <!-- End Explain -->
+
+    <!-- Count History -->
+    <div class="bg-pink-50 px-4 py-2 space-y-2 text-lg mb-4">
+        <div *ngFor="let countHistory of exercise.countHistories">
+            <div class="">
+                <span *ngIf="countHistory.answer === exercise.answer" nz-icon nzType="check" nzTheme="outline"
+                    class="text-indigo-600"></span>
+                <span *ngIf="countHistory.answer != exercise.answer" nz-icon nzType="close" nzTheme="outline"
+                    class="text-red-600"></span>
+
+                <span [class.text-gray-700]="countHistory.answer != exercise.answer"
+                [class.text-blue-700]="countHistory.answer === exercise.answer"
+                    class="font-semibold text-xl ml-2">{{countHistory.answer}}:</span>
+                <span class="ml-3 text-xl">{{countHistory.count}}</span>
             </div>
         </div>
-    }
+    </div>
+    <!-- End Count History -->
 
+    <!-- History -->
     @if (isShowHistory) {
-        <nz-collapse [nzBordered]="false" class="bg-stone-100">
-            <nz-collapse-panel nzHeader="Histories" (nzActiveChange)="onShowHistoryChange( $event)">
-                <div>
-                    <nz-timeline>
-                        @for (history of exercise.histories; track $index) {
-                            <nz-timeline-item [nzColor]="history.chooseAnswer==exercise.answer ? 'green' : 'red'">
+    <nz-collapse [nzBordered]="false" class="bg-stone-100">
+        <nz-collapse-panel nzHeader="Histories" (nzActiveChange)="onShowHistoryChange( $event)">
+            <div>
+                <nz-timeline>
+                    @for (history of exercise.histories; track $index) {
+                    <nz-timeline-item [nzColor]="history.chooseAnswer==exercise.answer ? 'green' : 'red'">
                         <span class="font-semibold mr-2">
                             {{ history.chooseAnswer }}:
                         </span>
-                                <span>
+                        <span>
                             {{ history.date | date : 'yyyy-MM-dd HH:mm:ss' }}
                         </span>
-                            </nz-timeline-item>
-                        }
-                    </nz-timeline>
-                </div>
-            </nz-collapse-panel>
-        </nz-collapse>
+                    </nz-timeline-item>
+                    }
+                </nz-timeline>
+            </div>
+        </nz-collapse-panel>
+    </nz-collapse>
     }
+    <!-- End History -->
 
 </div>
 
+<!-- Answer -->
 <ng-template #answerTemp let-value="value" let-answer="answer" let-correctAnswer="correctAnswer">
     <div class="flex items-center gap-x-3">
         <div class="flex items-center grow-0">
             <input [id]="'answer-' + exercise.id + value" [name]="'answer'+ exercise.id" [disabled]="!isAllowEditAnswer"
-                   [(ngModel)]="exercise.chooseAnswer" (ngModelChange)="onModelChange($event)" [value]="value"
-                   type="radio"
-                   class="h-5 w-5 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                [(ngModel)]="exercise.chooseAnswer" (ngModelChange)="onModelChange($event)" [value]="value" type="radio"
+                class="h-5 w-5 border-gray-300 text-indigo-600 focus:ring-indigo-600">
         </div>
         <div class="grow">
             <label [for]="'answer-' + exercise.id + value" class="block text-xl font-normal leading-6 text-gray-900">
@@ -95,26 +116,26 @@
         </div>
 
         @if (isShowAnswer) {
-            <div class="grow-0 flex">
+        <div class="grow-0 flex">
             <span
                 *ngIf="exercise.chooseAnswer && exercise.chooseAnswer === correctAnswer && exercise.chooseAnswer === value"
                 nz-icon nzType="check-circle" class="text-2xl text-orange-400" nzTheme="fill">
             </span>
 
-                <span
-                    *ngIf="exercise.chooseAnswer && exercise.chooseAnswer !== correctAnswer && value === correctAnswer"
-                    nz-icon nzType="check-circle" class="text-2xl text-orange-600" nzTheme="outline">
+            <span *ngIf="exercise.chooseAnswer && exercise.chooseAnswer !== correctAnswer && value === correctAnswer"
+                nz-icon nzType="check-circle" class="text-2xl text-orange-600" nzTheme="outline">
             </span>
 
-                <span
-                    *ngIf="exercise.chooseAnswer && exercise.chooseAnswer !== correctAnswer && exercise.chooseAnswer === value"
-                    nz-icon nzType="close-circle" class="text-2xl  text-red-600" nzTheme="fill">
+            <span
+                *ngIf="exercise.chooseAnswer && exercise.chooseAnswer !== correctAnswer && exercise.chooseAnswer === value"
+                nz-icon nzType="close-circle" class="text-2xl  text-red-600" nzTheme="fill">
             </span>
 
-                <span *ngIf="!exercise.chooseAnswer && correctAnswer === value" nz-icon nzType="check-circle"
-                      class="text-2xl  text-orange-600" nzTheme="outline">
+            <span *ngIf="!exercise.chooseAnswer && correctAnswer === value" nz-icon nzType="check-circle"
+                class="text-2xl  text-orange-600" nzTheme="outline">
             </span>
-            </div>
+        </div>
         }
     </div>
 </ng-template>
+<!-- End Answer -->

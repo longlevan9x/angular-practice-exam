@@ -8,5 +8,11 @@ export interface ExerciseModel {
     answer?: string
     explain?: string
     chooseAnswer?: string
-    histories?: any[]
+    histories?: any[],
+    countHistories?: CountHistoryModel[]
+}
+
+interface CountHistoryModel {
+    count: number,
+    answer: string,
 }
