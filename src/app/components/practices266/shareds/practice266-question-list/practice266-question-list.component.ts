@@ -11,6 +11,8 @@ export class Practice266QuestionListComponent {
     @Input() totalQuestion: number = 0;
     @Input() isShowExplain: boolean = false;
     @Input() isShowHistory: boolean = false;
+    @Input() isShowCountHistory: boolean = false;
+    @Input() isShowAnswer: boolean = false;
 
     isShowExercisesModal: boolean = false;
     isShowExerBtn: boolean = false;

@@ -59,7 +59,7 @@
     <!-- End Explain -->
 
     <!-- Count History -->
-    <div class="bg-pink-50 px-4 py-2 space-y-2 text-lg mb-4">
+    <div *ngIf="isShowCountHistory" class="bg-pink-50 px-4 py-2 space-y-2 text-lg mb-4">
         <div *ngFor="let countHistory of exercise.countHistories">
             <div class="">
                 <span *ngIf="countHistory.answer === exercise.answer" nz-icon nzType="check" nzTheme="outline"
@@ -68,7 +68,7 @@
                     class="text-red-600"></span>
 
                 <span [class.text-gray-700]="countHistory.answer != exercise.answer"
-                [class.text-blue-700]="countHistory.answer === exercise.answer"
+                    [class.text-blue-700]="countHistory.answer === exercise.answer"
                     class="font-semibold text-xl ml-2">{{countHistory.answer}}:</span>
                 <span class="ml-3 text-xl">{{countHistory.count}}</span>
             </div>

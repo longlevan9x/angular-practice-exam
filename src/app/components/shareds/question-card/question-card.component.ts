@@ -1,6 +1,6 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {ExerciseModel} from '../../../models/exercise.model';
-import {PracticeHistoryService} from '../../../services/practice-history.service';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ExerciseModel } from '../../../models/exercise.model';
+import { PracticeHistoryService } from '../../../services/practice-history.service';
 
 @Component({
     selector: 'app-question-card',
@@ -16,6 +16,7 @@ export class QuestionCardComponent implements OnInit {
     @Input() exercise: ExerciseModel = {};
     @Input() isResult = false;
     @Input() isShowHistory = false;
+    @Input() isShowCountHistory = false;
     @Input() bookmarkKey: string = '';
 
     @Output() exerciseChange = new EventEmitter<ExerciseModel>();
